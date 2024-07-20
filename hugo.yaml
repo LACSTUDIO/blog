@@ -16,16 +16,16 @@ hasCJKLanguage: false  # 是否启用CJK语言支持
 languages:  # 多语言配置
     en:  # 英语配置
         languageName: English
-        title: Example Site
-        weight: 1
+        title: LACS Blog
+        weight: 2
         params:
             description: Example description
     zh-cn:  # 中文配置
-        languageName: 中文
-        title: 演示站点
-        weight: 2
-        params:
-            description: 演示说明
+        languageName: 中文  # 语言名称
+        title: 领创博客  # 页面标题
+        weight: 1  # 排序权重
+        params:  # 参数配置
+            description: 领创博客# 描述信息
 
 services:  # 服务配置
     # Change it to your Disqus shortname before using
@@ -55,12 +55,12 @@ params:  # 参数配置
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:  # 侧边栏配置
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        avatar:
-            enabled: true
-            local: true
-            src: img/avatar.jpg
+        emoji: 🍥  # 侧边栏图标
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  # 侧边栏副标题
+        avatar:  # 头像配置
+            enabled: true  # 是否启用头像
+            local: false  # 头像是否为本地资源
+            src: https://s3.bmp.ovh/imgs/2024/06/16/a20ff655b7ea3a5b.jpg # 头像图片路径
 
     article:  # 文章配置
         math: false
@@ -201,12 +201,17 @@ params:  # 参数配置
 menu:  # 菜单配置
     main: []
 
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+        - identifier: blibli
+          name: blibli
+          url: https://space.bilibili.com/1779662818
           params:
-              icon: brand-github
+              icon: blibli
+
+        - identifier: QQ
+          name: QQ
+          url: https://qm.qq.com/q/xiN8TiHrol
+          params:
+              icon: QQ
 
 related:  # 相关内容配置
     includeNewer: true
