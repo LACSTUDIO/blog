@@ -1,11 +1,11 @@
 ---
-title: "ycsj"
+title: "yc"
 date: 2019-05-28
-layout: "ycsj"
-slug: "ycsj"
+layout: "yc"
+slug: "yc"
 menu:
     main:
         weight: -70
         params: 
-            icon: ycsj
+            icon: yc
 ---
