@@ -215,15 +215,15 @@ menu:  # 菜单配置
 
         - identifier: more
           name: more
-          url: https://qm.qq.com/q/xiN8TiHrol
+          url: /about/
           params:
-              icon: lxfs
+              icon: lx
 
         - identifier: ycsj
           name: 远程刷机
-          url: /ycsj/
+          url: /yc/
           params:
-              icon: ycsj
+              icon: yc
 
 related:  # 相关内容配置
     includeNewer: true
