@@ -291,7 +291,7 @@
     box-shadow: var(--shadow-l2); //改个阴影
     display: none;
     margin: 0; //改为0
-    border-radius: 30px; //加个圆角
+    border-radius: 20px; //加个圆角
     padding: 30px 30px;
   
     @include respond(xl) {
