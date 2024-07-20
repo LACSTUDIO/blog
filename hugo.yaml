@@ -210,6 +210,12 @@ menu:  # 菜单配置
           params:
               icon: QQ
 
+        - identifier: more
+          name: more
+          url: /about/
+          params:
+              icon: more
+
 related:  # 相关内容配置
     includeNewer: true
     threshold: 60
