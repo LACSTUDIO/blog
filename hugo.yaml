@@ -201,6 +201,8 @@ params:  # 参数配置
 menu:  # 菜单配置
     main: []
 
+    social:
+    
         - identifier: blibli
           name: blibli
           url: https://space.bilibili.com/1779662818
