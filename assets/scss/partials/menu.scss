@@ -125,56 +125,96 @@
         }
     }
 }
-
 /* Menu style */
 #main-menu {
+    /* 去除列表样式 */
     list-style: none;
+    /* 允许垂直滚动 */
     overflow-y: auto;
+    /* 允许菜单增长 */
     flex-grow: 1;
+    /* 设置字体大小 */
     font-size: 1.4rem;
+    /* 设置背景颜色 */
     background-color: var(--card-background);
 
+    /* 设置阴影效果 */
     box-shadow: var(--shadow-l1);
+    /* 默认隐藏菜单 */
     display: none;
+    /* 设置外边距 */
     margin: 0 calc(var(--container-padding) * -1);
 
+    /* 设置内边距 */
     padding: 30px 30px;
 
+    /* 针对大屏幕的响应式调整 */
     @include respond(xl) {
         padding: 15px 0;
     }
 
+    /* 设置子元素的排列方向和间距 */
     &, .menu-bottom-section ol {
         flex-direction: column;
         gap: 30px;
 
+        /* 针对大屏幕的响应式调整 */
         @include respond(xl) {
             gap: 25px;
         }
     }
 
+    /* 显示菜单 */
     &.show {
         display: flex;
     }
 
+    /* 针对中等屏幕的响应式调整 */
     @include respond(md) {
         align-items: flex-end;
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         background-color: transparent;
         padding: 0;
         box-shadow: none;
         margin: 0;
+
+        /* 设置子元素的排列方向和间距 */
+        &, .menu-bottom-section ol {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        /* 列表项样式 */
+        li {
+            width: auto;
+
+            /* 图标样式 */
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            /* 链接样式 */
+            a {
+                gap: 10px;
+            }
+        }
     }
 
+    /* 列表项样式 */
     li {
         position: relative;
         vertical-align: middle;
         padding: 0;
 
+        /* 针对中等屏幕的响应式调整 */
         @include respond(md) {
-            width: 100%;
+            width: auto;
         }
 
+        /* 图标样式 */
         svg {
             stroke: currentColor;
             stroke-width: 1.33;
@@ -182,6 +222,7 @@
             height: 20px;
         }
 
+        /* 链接样式 */
         a {
             height: 100%;
             display: inline-flex;
@@ -190,10 +231,12 @@
             gap: var(--menu-icon-separation);
         }
 
+        /* 文本样式 */
         span {
             flex: 1;
         }
 
+        /* 当前选中项样式 */
         &.current {
             a {
                 color: var(--accent-color);
@@ -201,6 +244,7 @@
             }
         }
 
+        /* 底部菜单部分样式 */
         &.menu-bottom-section {
             margin-top: auto;
 
@@ -211,6 +255,7 @@
         }
     }
 }
+
 
 .menu-social {
     list-style: none;
