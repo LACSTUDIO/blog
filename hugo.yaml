@@ -20,14 +20,14 @@ languages:  # 多语言配置
         title: 领创博客  # 页面标题
         weight: 1  # 排序权重
         params:  # 参数配置
-            description: 领创博客# 描述信息
+            description: 领创博客 #描述信息
 
 services:  # 服务配置
     # Change it to your Disqus shortname before using
-    disqus:
+    disqus:  # Disqus配置
         shortname: "hugo-theme-stack"  # Disqus短名称
     # GA Tracking ID
-    googleAnalytics:
+    googleAnalytics:  # Google Analytics配置
         id:  # Google Analytics跟踪ID
 
 permalinks:  # 永久链接配置
