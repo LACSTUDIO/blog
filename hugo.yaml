@@ -191,8 +191,11 @@ params:  # 参数配置
             enabled: true
 
 ### Custom menu
+# 自定义菜单
 ### See https://stack.jimmycai.com/config/menu
+# 参考链接
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+# 如果要移除关于、存档和搜索页面的菜单项，请从它们的 FrontMatter 中移除 `menu` 字段
 menu:  # 菜单配置
     main: []
 
@@ -214,7 +217,13 @@ menu:  # 菜单配置
           name: more
           url: /about/
           params:
-              icon: more
+              icon: lxfs
+
+        - identifier: ycsj
+          name: 远程刷机
+          url: /ycsj/
+          params:
+              icon: ycsj
 
 related:  # 相关内容配置
     includeNewer: true

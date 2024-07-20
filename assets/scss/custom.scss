@@ -5,9 +5,9 @@
     // 全局顶部边距
     --main-top-padding: 30px;
     // 全局卡片圆角
-    --card-border-radius: 25px;
+    --card-border-radius: 30px;
     // 标签云卡片圆角
-    --tag-border-radius: 8px;
+    --tag-border-radius: 30px;
     // 卡片间距
     --section-separation: 40px;
     // 全局字体大小
@@ -161,17 +161,22 @@
   //---------------------------------------------------
   // 全局页面布局间距调整
   .main-container {
+    // 设置最小高度为视口高度
     min-height: 100vh;
+    // 对齐方式为顶部对齐
     align-items: flex-start;
-    padding: 0 15px;
+    // 左右内边距为15px
+    padding: 0 10px;
+    // 设置元素之间的间距
     gap: var(--section-separation);
+    // 顶部内边距使用变量
     padding-top: var(--main-top-padding);
   
+    // 在中等屏幕尺寸下调整内边距
     @include respond(md) {
       padding: 0 37px;
     }
   }
-  
   //--------------------------------------------------
   //页面三栏宽度调整
   .container {
@@ -266,19 +271,27 @@
 // 菜单栏样式
 // 下拉菜单改圆角样式
 .menu {
+    /* 设置左内边距为0 */
     padding-left: 0;
+    /* 移除列表项的默认样式 */
     list-style: none;
-    flex-direction: column;
+    /* 设置弹性盒子的方向为垂直排列 */
+    flex-direction: row;
+    /* 隐藏水平滚动条 */
     overflow-x: hidden;
+    /* 显示垂直滚动条 */
     overflow-y: scroll;
+    /* 允许元素在必要时增长以占据剩余空间 */
     flex-grow: 1;
+    /* 设置字体大小为1.6rem */
     font-size: 1.6rem;
+    /* 设置背景颜色为卡片背景色 */
     background-color: var(--card-background);
   
     box-shadow: var(--shadow-l2); //改个阴影
     display: none;
     margin: 0; //改为0
-    border-radius: 10px; //加个圆角
+    border-radius: 30px; //加个圆角
     padding: 30px 30px;
   
     @include respond(xl) {
