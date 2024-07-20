@@ -1,4 +1,4 @@
-baseurl: https://example.com  # 网站的基本URL
+baseurl: https://xn--9krq6q.xn--5brr03o.top/ # 网站的基本URL
 languageCode: zh-cn  # 网站的语言代码
 theme: hugo-theme-stack  # 使用的主题
 paginate: 3  # 每页显示的文章数量
@@ -14,12 +14,7 @@ DefaultContentLanguage: zh-cn  # 默认内容语言
 hasCJKLanguage: false  # 是否启用CJK语言支持
 
 languages:  # 多语言配置
-    en:  # 英语配置
-        languageName: English
-        title: LACS Blog
-        weight: 2
-        params:
-            description: Example description
+
     zh-cn:  # 中文配置
         languageName: 中文  # 语言名称
         title: 领创博客  # 页面标题
@@ -55,12 +50,12 @@ params:  # 参数配置
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:  # 侧边栏配置
-        emoji: 🍥  # 侧边栏图标
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  # 侧边栏副标题
+        emoji:  # 侧边栏图标
+        subtitle: 主要分享一些刷机玩机的教程和心得。 # 侧边栏副标题
         avatar:  # 头像配置
-            enabled: false  # 是否启用头像
+            enabled: true  # 是否启用头像
             local: false  # 头像是否为本地资源
-            src:  # 头像图片路径
+            src: /img/avatar.jpg  # 头像图片路径
 
     article:  # 文章配置
         math: false
