@@ -215,7 +215,7 @@ menu:  # 菜单配置
 
         - identifier: more
           name: more
-          url: /about/
+          url: https://qm.qq.com/q/xiN8TiHrol
           params:
               icon: lxfs
 
