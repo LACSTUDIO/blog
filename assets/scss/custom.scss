@@ -332,8 +332,8 @@
       svg {
         stroke-width: 1.33;
   
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
       }
   
       a {
@@ -399,24 +399,24 @@
 //归档页面双栏
 /* 归档页面两栏 */
 @media (min-width: 1024px) {
+    // 定义在屏幕宽度至少为1024px时的紧凑文章列表样式
     .article-list--compact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: none;
-      box-shadow: none;
-      gap: 1rem;
+      display: grid; // 使用网格布局
+      grid-template-columns: 1fr 1fr; // 设置两列等宽
+      background: none; // 背景透明
+      box-shadow: none; // 无阴影
+      gap: 1rem; // 网格间距为1rem
   
+      // 文章项的样式
       article {
-        background: var(--card-background);
-        border: none;
-        box-shadow: var(--shadow-l2);
-        margin-bottom: 8px;
-        border-radius: 16px;
+        background: var(--card-background); // 使用变量设置背景色
+        border: none; // 无边框
+        box-shadow: var(--shadow-l2); // 使用变量设置阴影
+        margin-bottom: 8px; // 底部外边距为8px
+        border-radius: 16px; // 圆角半径为16px
       }
     }
   }
-
-  
 
 //  ~\blog\assets\scss\custom.scss
 
@@ -617,3 +617,8 @@
     }
   }
   
+
+/* 调整图标大小 */
+.icon {
+  font-size: 24px; /* 你可以根据需要调整这个值 */
+}
