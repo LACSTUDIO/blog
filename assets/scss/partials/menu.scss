@@ -171,39 +171,21 @@
     }
 
     /* 针对中等屏幕的响应式调整 */
+    // 在响应式布局中，当屏幕尺寸为中等（md）时应用以下样式
     @include respond(md) {
+        // 设置 flex 容器的对齐方式为底部对齐
         align-items: flex-end;
+        // 启用 flex 布局
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        // 设置背景颜色为透明
         background-color: transparent;
+        // 设置内边距为 0
         padding: 0;
+        // 设置盒阴影为无
         box-shadow: none;
+        // 设置外边距为 0
         margin: 0;
-
-        /* 设置子元素的排列方向和间距 */
-        &, .menu-bottom-section ol {
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        /* 列表项样式 */
-        li {
-            width: auto;
-
-            /* 图标样式 */
-            svg {
-                width: 16px;
-                height: 16px;
-            }
-
-            /* 链接样式 */
-            a {
-                gap: 10px;
-            }
-        }
     }
-
     /* 列表项样式 */
     li {
         position: relative;
@@ -212,7 +194,7 @@
 
         /* 针对中等屏幕的响应式调整 */
         @include respond(md) {
-            width: auto;
+            width: 100%;
         }
 
         /* 图标样式 */
@@ -256,7 +238,6 @@
         }
     }
 }
-
 
 .menu-social {
     list-style: none;
