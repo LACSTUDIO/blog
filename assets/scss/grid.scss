@@ -1,3 +1,43 @@
+/* Main container style */
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* 确保内容区域充满整个容器 */
+    padding: 0 15px;
+    gap: var(--section-separation);
+    padding-top: var(--main-top-padding);
+
+    @include respond(md) {
+        padding: 0 20px;
+    }
+}
+
+/* Container style */
+.container {
+    flex-grow: 1; /* 确保容器可以扩展到可用空间 */
+    display: flex;
+    flex-direction: column;
+
+    @include respond(md) {
+        flex-direction: row; /* 响应式调整为行内布局 */
+        align-items: stretch; /* 确保侧边栏和主内容区域充满整个容器 */
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none; /* 默认隐藏侧边栏 */
+    }
+
+    main.main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-separation);
+        padding-top: var(--main-top-padding);
+    }
+}
+
 /* Menu style */
 #main-menu {
     display: flex; /* 默认显示菜单 */
@@ -53,63 +93,5 @@
                 padding-left: 0;
             }
         }
-    }
-}
-
-/* Container style */
-.container {
-    display: flex;
-    flex-direction: column;
-
-    .left-sidebar,
-    .right-sidebar {
-        display: none; /* 默认隐藏侧边栏 */
-    }
-
-    main.main {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        gap: var(--section-separation);
-        padding-top: var(--main-top-padding);
-    }
-
-    @include respond(md) {
-        flex-direction: row; /* 响应式调整为行内布局 */
-        align-items: flex-start;
-
-        .left-sidebar,
-        .right-sidebar {
-            display: flex; /* 显示侧边栏 */
-        }
-
-        .left-sidebar {
-            order: -3;
-            max-width: var(--left-sidebar-max-width);
-        }
-
-        .right-sidebar {
-            order: -1;
-            max-width: var(--right-sidebar-max-width);
-        }
-
-        main.main {
-            flex-grow: 1;
-            flex-direction: column;
-            gap: var(--section-separation);
-            padding-top: var(--main-top-padding);
-        }
-    }
-}
-
-/* Main container style */
-.main-container {
-    min-height: 100vh;
-    padding: 0 15px;
-    gap: var(--section-separation);
-    padding-top: var(--main-top-padding);
-
-    @include respond(md) {
-        padding: 0 20px;
     }
 }
