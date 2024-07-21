@@ -188,7 +188,7 @@
 
     /* 针对小屏幕的响应式调整 */
     @include respond(sm) {
-        flex-direction: row;
+        flex-direction: column; // 确保在小屏幕上纵向排列
         gap: 10px;
     }
 
