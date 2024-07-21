@@ -125,7 +125,6 @@
         }
     }
 }
-
 /* Menu style */
 #main-menu {
     /* 去除列表样式 */
@@ -186,6 +185,13 @@
         // 设置外边距为 0
         margin: 0;
     }
+
+    /* 针对小屏幕的响应式调整 */
+    @include respond(sm) {
+        flex-direction: row;
+        gap: 10px;
+    }
+
     /* 列表项样式 */
     li {
         position: relative;
@@ -197,12 +203,19 @@
             width: 100%;
         }
 
+        /* 针对小屏幕的响应式调整 */
+        @include respond(sm) {
+            width: auto;
+        }
+    }
+}
+
         /* 图标样式 */
         svg {
             stroke: currentColor;
             stroke-width: 1.33;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         /* 链接样式 */
