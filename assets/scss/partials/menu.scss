@@ -125,6 +125,7 @@
         }
     }
 }
+
 /* Menu style */
 #main-menu {
     /* 去除列表样式 */
@@ -185,13 +186,6 @@
         // 设置外边距为 0
         margin: 0;
     }
-
-    /* 针对小屏幕的响应式调整 */
-    @include respond(sm) {
-        flex-direction: column; // 确保在小屏幕上纵向排列
-        gap: 10px;
-    }
-
     /* 列表项样式 */
     li {
         position: relative;
@@ -203,49 +197,44 @@
             width: 100%;
         }
 
-        /* 针对小屏幕的响应式调整 */
-        @include respond(sm) {
-            width: auto;
+        /* 图标样式 */
+        svg {
+            stroke: currentColor;
+            stroke-width: 1.33;
+            width: 40px;
+            height: 40px;
         }
-    }
 
-    /* 图标样式 */
-    svg {
-        stroke: currentColor;
-        stroke-width: 1.33;
-        width: 30px;
-        height: 30px;
-    }
-
-    /* 链接样式 */
-    a {
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        color: var(--body-text-color);
-        gap: var(--menu-icon-separation);
-    }
-
-    /* 文本样式 */
-    span {
-        flex: 1;
-    }
-
-    /* 当前选中项样式 */
-    &.current {
+        /* 链接样式 */
         a {
-            color: var(--accent-color);
-            font-weight: bold;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            color: var(--body-text-color);
+            gap: var(--menu-icon-separation);
         }
-    }
 
-    /* 底部菜单部分样式 */
-    &.menu-bottom-section {
-        margin-top: auto;
+        /* 文本样式 */
+        span {
+            flex: 1;
+        }
 
-        ol {
-            display: flex;
-            padding-left: 0;
+        /* 当前选中项样式 */
+        &.current {
+            a {
+                color: var(--accent-color);
+                font-weight: bold;
+            }
+        }
+
+        /* 底部菜单部分样式 */
+        &.menu-bottom-section {
+            margin-top: auto;
+
+            ol {
+                display: flex;
+                padding-left: 0;
+            }
         }
     }
 }
