@@ -208,46 +208,44 @@
             width: auto;
         }
     }
-}
 
-        /* 图标样式 */
-        svg {
-            stroke: currentColor;
-            stroke-width: 1.33;
-            width: 30px;
-            height: 30px;
-        }
+    /* 图标样式 */
+    svg {
+        stroke: currentColor;
+        stroke-width: 1.33;
+        width: 30px;
+        height: 30px;
+    }
 
-        /* 链接样式 */
+    /* 链接样式 */
+    a {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        color: var(--body-text-color);
+        gap: var(--menu-icon-separation);
+    }
+
+    /* 文本样式 */
+    span {
+        flex: 1;
+    }
+
+    /* 当前选中项样式 */
+    &.current {
         a {
-            height: 100%;
-            display: inline-flex;
-            align-items: center;
-            color: var(--body-text-color);
-            gap: var(--menu-icon-separation);
+            color: var(--accent-color);
+            font-weight: bold;
         }
+    }
 
-        /* 文本样式 */
-        span {
-            flex: 1;
-        }
+    /* 底部菜单部分样式 */
+    &.menu-bottom-section {
+        margin-top: auto;
 
-        /* 当前选中项样式 */
-        &.current {
-            a {
-                color: var(--accent-color);
-                font-weight: bold;
-            }
-        }
-
-        /* 底部菜单部分样式 */
-        &.menu-bottom-section {
-            margin-top: auto;
-
-            ol {
-                display: flex;
-                padding-left: 0;
-            }
+        ol {
+            display: flex;
+            padding-left: 0;
         }
     }
 }
