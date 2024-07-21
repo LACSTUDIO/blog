@@ -1,97 +1,111 @@
-/* Main container style */
-.main-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; /* 确保内容区域充满整个容器 */
-    padding: 0 15px;
-    gap: var(--section-separation);
-    padding-top: var(--main-top-padding);
+.container {
+    margin-left: auto;
+    margin-right: auto;
 
-    @include respond(md) {
-        padding: 0 20px;
+    // 左侧边栏样式
+    .left-sidebar {
+        order: -3;
+        max-width: var(--left-sidebar-max-width);
+    }
+
+    // 右侧边栏样式
+    .right-sidebar {
+        order: -1;
+        max-width: var(--right-sidebar-max-width);
+
+        /// Display right sidebar when min-width: lg
+        @include respond(lg) {
+            display: flex;
+        }
+    }
+
+    // 扩展模式下的样式
+    &.extended {
+        @include respond(md) {
+            max-width: 1024px;
+            --left-sidebar-max-width: 25%;
+            --right-sidebar-max-width: 30%;
+        }
+
+        @include respond(lg) {
+            max-width: 1280px;
+            --left-sidebar-max-width: 20%;
+            --right-sidebar-max-width: 30%;
+        }
+
+        @include respond(xl) {
+            max-width: 1536px;
+            --left-sidebar-max-width: 15%;
+            --right-sidebar-max-width: 25%;
+        }
+    }
+
+    // 紧凑模式下的样式
+    &.compact {
+        @include respond(md) {
+            --left-sidebar-max-width: 25%;
+            max-width: 768px;
+        }
+
+        @include respond(lg) {
+            max-width: 1024px;
+            --left-sidebar-max-width: 20%;
+        }
+
+        @include respond(xl) {
+            max-width: 1280px;
+        }
     }
 }
 
-/* Container style */
-.container {
-    flex-grow: 1; /* 确保容器可以扩展到可用空间 */
+// 弹性布局样式
+.flex {
+    display: flex;
+    flex-direction: row;
+
+    // 列方向布局
+    &.column {
+        flex-direction: column;
+    }
+
+    // 在手机上列方向布局
+    &.on-phone--column {
+        flex-direction: column;
+        @include respond(md) {
+            flex-direction: unset;
+        }
+    }
+
+    // 全宽样式
+    .full-width {
+        width: 100%;
+    }
+}
+
+// 主内容区域样式
+main.main {
+    order: -2;
+    min-width: 0;
+    max-width: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    gap: var(--section-separation);
 
     @include respond(md) {
-        flex-direction: row; /* 响应式调整为行内布局 */
-        align-items: stretch; /* 确保侧边栏和主内容区域充满整个容器 */
-    }
-
-    .left-sidebar,
-    .right-sidebar {
-        display: none; /* 默认隐藏侧边栏 */
-    }
-
-    main.main {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        gap: var(--section-separation);
         padding-top: var(--main-top-padding);
     }
 }
 
-/* Menu style */
-#main-menu {
-    display: flex; /* 默认显示菜单 */
-    flex-direction: column; /* 设置菜单项的排列方向 */
-    gap: 30px; /* 设置菜单项之间的间距 */
-    padding: 30px 30px; /* 设置内边距 */
-    background-color: var(--card-background); /* 设置背景颜色 */
-    box-shadow: var(--shadow-l1); /* 设置阴影效果 */
-    margin: 0 calc(var(--container-padding) * -1); /* 设置外边距 */
-    font-size: 1.4rem; /* 设置字体大小 */
-    overflow-y: auto; /* 允许垂直滚动 */
-
-    @include respond(xl) {
-        padding: 15px 0;
-    }
-
-    li {
-        position: relative;
-        vertical-align: middle;
-        padding: 0;
-
-        svg {
-            stroke: currentColor;
-            stroke-width: 1.33;
-            width: 40px;
-            height: 40px;
-        }
-
-        a {
-            height: 100%;
-            display: inline-flex;
-            align-items: center;
-            color: var(--body-text-color);
-            gap: var(--menu-icon-separation);
-        }
-
-        span {
-            flex: 1;
-        }
-
-        &.current {
-            a {
-                color: var(--accent-color);
-                font-weight: bold;
-            }
-        }
-
-        &.menu-bottom-section {
-            margin-top: auto;
-
-            ol {
-                display: flex;
-                padding-left: 0;
-            }
-        }
+// 主容器样式
+.main-container {
+    min-height: 100vh;
+    align-items: flex-start;
+    padding: 0 15px;
+    gap: var(--section-separation);
+    padding-top: var(--main-top-padding);
+    
+    @include respond(md) {
+        padding: 0 20px;
     }
 }
