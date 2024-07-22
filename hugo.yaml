@@ -43,6 +43,7 @@ params:  # 参数配置
     footer:  # 页脚配置
         since: 2024  # 指定开始年份
         customText:  # 自定义文本
+        
 
     dateFormat:  # 日期格式
         published: Jan 02, 2006
