@@ -119,7 +119,7 @@
         .site-logo {
             width: 100%;
             height: 100%;
-            border-radius: 0;
+            border-radius: 1%;
             box-shadow: var(--shadow-l1);
         }
 
@@ -129,7 +129,7 @@
             width: var(--emoji-size);
             height: var(--emoji-size);
             line-height: var(--emoji-size);
-            border-radius: 100%;
+            border-radius: 50%;
             bottom: 0;
             right: 0;
             text-align: center;
