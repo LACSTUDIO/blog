@@ -28,7 +28,7 @@ services:  # 服务配置
         shortname: "hugo-theme-stack"  # Disqus短名称
     # GA Tracking ID
     googleAnalytics:  # Google Analytics配置
-        id: G-LR7FPHHFZQ  # Google Analytics跟踪ID
+        id: https://www.googletagmanager.com/gtag/js?id=G-LR7FPHHFZQ  # Google Analytics跟踪ID
 
 permalinks:  # 永久链接配置
     post: /p/:slug/  # 文章的永久链接格式
