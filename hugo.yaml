@@ -190,8 +190,6 @@ params:  # 参数配置
         content:
             enabled: true
 
-     googleSiteVerification: i8H4v3PMbp-U4dmkiyxjqxMnKm7OX6LrgDNlVlZ6uiM
-
 ### Custom menu
 # 自定义菜单
 ### See https://stack.jimmycai.com/config/menu
