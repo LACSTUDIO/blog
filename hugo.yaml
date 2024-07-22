@@ -39,7 +39,7 @@ params:  # 参数配置
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:  # 网站图标
+    favicon: /img/lacs.svg # 网站图标
 
     footer:  # 页脚配置
         since: 2024  # 指定开始年份
