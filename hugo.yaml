@@ -29,7 +29,6 @@ services:  # 服务配置
     # GA Tracking ID
     googleAnalytics:  # Google Analytics配置
         id:  # Google Analytics跟踪ID
-    google-site-verification : i8H4v3PMbp-U4dmkiyxjqxMnKm7OX6LrgDNlVlZ6uiM
 
 permalinks:  # 永久链接配置
     post: /p/:slug/  # 文章的永久链接格式
