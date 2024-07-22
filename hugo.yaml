@@ -33,13 +33,12 @@ services:  # 服务配置
 permalinks:  # 永久链接配置
     post: /p/:slug/  # 文章的永久链接格式
     page: /:slug/  # 页面的永久链接格式
-
 params:  # 参数配置
     mainSections:  # 主要部分
         - post
-    featuredImageField: image
-    rssFullContent: true
-    favicon: /img/lacs.ico # 网站图标
+    featuredImageField: image  # 特色图片字段
+    rssFullContent: true  # RSS 全文内容
+    favicon: /favicon.ico  # 网站图标
 
     footer:  # 页脚配置
         since: 2024  # 指定开始年份
