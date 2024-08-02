@@ -47,7 +47,7 @@ params:  # 参数配置
 
     dateFormat:  # 日期格式
         published: 2024-08-02
-        lastUpdated: 0224-08-02 15:04 MST
+        lastUpdated: 2024-08-02 15:04 MST
 
     sidebar:  # 侧边栏配置
         emoji:  # 侧边栏图标
