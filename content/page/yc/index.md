@@ -1,5 +1,11 @@
 ---
-title: 远程刷机[非公益性]
+title: 远程刷机
+menu:
+    main: 
+        weight: -90
+        params:
+            icon: user
+
 ---
 
 ## **远程软件:TODESK [下载todesk](https://www.todesk.com/download.html)**
