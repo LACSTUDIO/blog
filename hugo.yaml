@@ -1,7 +1,7 @@
 baseurl: https://xn--9krq6q.xn--5brr03o.top/ # 网站的基本URL
 languageCode: zh-cn  # 网站的语言代码
 theme: hugo-theme-stack  # 使用的主题
-paginate: 3  # 每页显示的文章数量
+paginate: 5  # 每页显示的文章数量
 title: 领创博客  # 网站的标题
 copyright: © 2024 领创工作室  # 版权信息
 
