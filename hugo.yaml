@@ -221,7 +221,7 @@ menu:  # 菜单配置
 
         - identifier: yc
           name: 远程刷机
-          url: /yc/
+          url: /远程刷机/
           params:
               icon: yc
 
