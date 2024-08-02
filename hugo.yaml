@@ -63,7 +63,7 @@ params:  # 参数配置
         readingTime: true
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: 2024@领创工作室-保留所有权利
 
     comments:  # 评论配置
         enabled: false
