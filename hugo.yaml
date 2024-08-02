@@ -3,7 +3,7 @@ languageCode: zh-cn  # 网站的语言代码
 theme: hugo-theme-stack  # 使用的主题
 paginate: 5  # 每页显示的文章数量
 title: 领创博客  # 网站的标题
-copyright: © 2024 领创工作室  # 版权信息
+copyright: © 领创工作室-保留所有权利  # 版权信息
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
