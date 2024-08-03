@@ -8,5 +8,5 @@ categories:
     - 刷机教程
 ---
 
-## 视频教程  https://space.bilibili.com/177966281
+## 视频教程  https://www.bilibili.com/video/BV1TuiLezEYK/
 
