@@ -63,7 +63,7 @@ params:  # 参数配置
         readingTime: true
         license:
             enabled: true
-            default: 2024@领创工作室-保留所有权利
+            default: 2024-领创工作室-保留所有权利
 
     comments:  # 评论配置
         enabled: false
@@ -206,12 +206,6 @@ menu:  # 菜单配置
           url: https://space.bilibili.com/1779662818
           params:
               icon: blibli
-
-        - identifier: QQ
-          name: QQ
-          url: https://qm.qq.com/q/VIvkX8nMMU
-          params:
-              icon: QQ
 
         - identifier: more
           name: more
