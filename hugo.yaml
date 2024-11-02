@@ -45,9 +45,9 @@ params:  # 参数配置
         customText:  # 自定义文本
         
 
-    dateFormat:  # 日期格式
-        published: 2024-08-02
-        lastUpdated: 2024-08-02 15:04 MST
+    dateFormat:
+        published: 08 月 02 日, 2006年
+        lastUpdated: 08 月 02 日, 2006年 15:04 MST
 
     sidebar:  # 侧边栏配置
         emoji:  # 侧边栏图标
