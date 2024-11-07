@@ -2,7 +2,7 @@
 title: 小米一键Root工具箱更新日志
 description:
 date: 2024-11-02
-slug: Tool
+slug: LAC_Root_Tools_Update_Log
 image:
 categories:
     - 一键root
