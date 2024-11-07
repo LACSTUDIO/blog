@@ -10,8 +10,6 @@ categories:
 
 一键Root_更新日志
 
-![img](https://api2.mubu.com/v3/photo/b65ef6e1-387a-4d63-981a-55aaee862956.jpg?x-tos-process=image/resize,w_72,h_72)
-
 # 脚本/工具更新日志
 
 - V4.2

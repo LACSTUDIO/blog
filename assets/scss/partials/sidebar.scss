@@ -108,10 +108,13 @@
         padding: 0;
     }
 
-    .site-avatar {
-        position: relative;
-        display: inline-block;
-    }
+.site-avatar {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #000; /* 添加黑色矩形边框 */
+    border-radius: 0; /* 确认边框没有圆角 */
+}
+
     
     .site-avatar::before {
         content: '';
@@ -121,7 +124,7 @@
         width: 300px; /* 与图片宽度相同 */
         height: 300px; /* 与图片高度相同 */
         background: inherit;
-        border-radius: 50%; /* 圆形效果 */
+        border-radius: 0%; /* 圆形效果 */
         transform: translate(-50%, -50%);
         z-index: -1;
     }
@@ -130,7 +133,7 @@
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 50%; /* 圆形效果 */
+        border-radius: 0%; /* 圆形效果 */
     }
 
     .site-meta {

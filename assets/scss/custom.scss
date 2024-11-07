@@ -38,7 +38,10 @@
   code {
     word-break: break-all;
   }
-  //头像圆角
+// 头像方形角
+.avatar {
+  border-radius: 0 !important; // 强制应用样式
+}
 
 
 
