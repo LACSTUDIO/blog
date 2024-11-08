@@ -8,7 +8,7 @@ categories:
     - 刷机教程
 ---
 
-- ## [视频教程](https://www.bilibili.com/video/BV1TuiLezEYK/)
+- ## [点我观看视频教程](https://www.bilibili.com/video/BV1TuiLezEYK/)
 
 - ## 更新日志
 
