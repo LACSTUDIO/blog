@@ -7,42 +7,89 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>小米一键Root工具箱更新日志</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/lac_root_tools_update_log/</link>
-        <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>小米澎湃OS绕答题解bl锁教程</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/lac_root_tools_update_log/</guid>
-        <description>&lt;p&gt;一键Root_更新日志&lt;/p&gt;
-&lt;h1 id=&#34;脚本工具更新日志&#34;&gt;脚本/工具更新日志
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</guid>
+        <description>&lt;h2 id=&#34;视频教程--httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;视频教程  &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1TuiLezEYK/&lt;/a&gt;
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>小米一键ROOT工具更新日志</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</guid>
+        <description>&lt;h1 id=&#34;脚本工具更新日志&#34;&gt;脚本/工具更新日志
 &lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;V4.2&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;V5.0.0_Beta  (2024-11-08)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;V4.2&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.优化Usb3.0补丁的提示 2.智能检测工具使用状态,第二次使用直接进主页 3.修改并添加部分注释&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;优化Usb3.0补丁的提示&lt;/li&gt;
+&lt;li&gt;智能检测工具使用状态,第二次使用直接进主页&lt;/li&gt;
+&lt;li&gt;修改并添加部分注释&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V4.1.5&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.修复Usb3.0补丁的返回bug和提示的bug 2.优化部分界面&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修复Usb3.0补丁的返回bug和提示的bug&lt;/li&gt;
+&lt;li&gt;优化部分界面&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V4.1&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.更改脚本标题 2.添加工具教程功能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;更改脚本标题&lt;/li&gt;
+&lt;li&gt;添加工具教程功能&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V4.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;优化部分界面&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;优化部分界面&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V4.0_Beta6&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.优化部分界面 2.优化部分功能 3.优化Over后的代码 4.精简工具目录&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;优化部分界面&lt;/li&gt;
+&lt;li&gt;优化部分功能&lt;/li&gt;
+&lt;li&gt;优化Over后的代码&lt;/li&gt;
+&lt;li&gt;精简工具目录&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V4.0_Beta5&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.全新改版工具使用逻辑 2.添加捐赠功能 3.将修补后的boot镜像命名为root.img 4.精简部分功能 5.优化usb3.0补丁脚本 6.添加一键安装Magisk.apk功能 7.工具目录更简洁  8.表明是否测试&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;全新改版工具使用逻辑&lt;/li&gt;
+&lt;li&gt;添加捐赠功能&lt;/li&gt;
+&lt;li&gt;将修补后的boot镜像命名为root.img&lt;/li&gt;
+&lt;li&gt;精简部分功能&lt;/li&gt;
+&lt;li&gt;优化usb3.0补丁脚本&lt;/li&gt;
+&lt;li&gt;添加一键安装Magisk.apk功能&lt;/li&gt;
+&lt;li&gt;工具目录更简洁&lt;/li&gt;
+&lt;li&gt;表明是否测试&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;V3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.优化使用逻辑 2.添加查看更新日志功能 3.区分国家版本 4.添加机型代号 5.调整了窗口长度与宽度 6.标明发布论坛&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;优化使用逻辑&lt;/li&gt;
+&lt;li&gt;添加查看更新日志功能&lt;/li&gt;
+&lt;li&gt;区分国家版本&lt;/li&gt;
+&lt;li&gt;添加机型代号&lt;/li&gt;
+&lt;li&gt;调整了窗口长度与宽度&lt;/li&gt;
+&lt;li&gt;标明发布论坛&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h1 id=&#34;适配日志&#34;&gt;适配日志
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -65,16 +112,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-        <item>
-        <title>小米澎湃OS绕答题解bl锁教程</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</link>
-        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</guid>
-        <description>&lt;h2 id=&#34;视频教程--httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;视频教程  &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV1TuiLezEYK/&lt;/a&gt;
-&lt;/h2&gt;</description>
         </item>
         <item>
         <title>Archives</title>

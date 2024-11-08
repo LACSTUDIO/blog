@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ROOT on 领创博客</title>
+        <link>http://localhost:1313/categories/root/</link>
+        <description>Recent content in ROOT on 领创博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>领创工作室-保留所有权利</copyright>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/root/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>小米澎湃OS绕答题解bl锁教程</title>
+        <link>http://localhost:1313/p/hyperos_unlocktool/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/hyperos_unlocktool/</guid>
+        <description>&lt;h1 id=&#34;脚本工具更新日志&#34;&gt;脚本/工具更新日志
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;V4.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.优化Usb3.0补丁的提示 2.智能检测工具使用状态,第二次使用直接进主页 3.修改并添加部分注释&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.1.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.修复Usb3.0补丁的返回bug和提示的bug 2.优化部分界面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.更改脚本标题 2.添加工具教程功能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;优化部分界面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.0_Beta6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.优化部分界面 2.优化部分功能 3.优化Over后的代码 4.精简工具目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.0_Beta5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.全新改版工具使用逻辑 2.添加捐赠功能 3.将修补后的boot镜像命名为root.img 4.精简部分功能 5.优化usb3.0补丁脚本 6.添加一键安装Magisk.apk功能 7.工具目录更简洁  8.表明是否测试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.优化使用逻辑 2.添加查看更新日志功能 3.区分国家版本 4.添加机型代号 5.调整了窗口长度与宽度 6.标明发布论坛&lt;/p&gt;
+&lt;h1 id=&#34;适配日志&#34;&gt;适配日志
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2023.03.31 K50U MIUI14.0.7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023.03.29 K50U MIUI14.0.5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023.03.26 K50U MIUI13.0.7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023.03.06 K20Pro/尊享版 MIUI12.5.6&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023.02.20 K50U MIUI13.0.4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023.02.04 10U MIUI12.0.15&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
