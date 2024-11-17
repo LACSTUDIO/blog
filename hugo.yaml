@@ -51,7 +51,7 @@ params:  # 参数配置
 
     sidebar:  # 侧边栏配置
         emoji:  # 侧边栏图标
-        subtitle: 主要分享一些刷机玩机的教程和心得。 # 侧边栏副标题
+        subtitle: 主要分享一些刷机玩机的教程和心得。酷安/b站@领创工作室 # 侧边栏副标题
         avatar:  # 头像配置
             enabled: true  # 是否启用头像
             local: false  # 头像是否为本地资源
