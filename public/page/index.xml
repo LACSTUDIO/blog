@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 领创博客</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/page/</link>
+        <link>http://localhost:1313/page/</link>
         <description>Recent content in Pages on 领创博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;QQ:2935278133&lt;/p&gt;
 &lt;p&gt;微信:LACS177&lt;/p&gt;
 &lt;p&gt;QQ交流群:676581092&lt;/p&gt;
@@ -28,77 +28,19 @@
         </item>
         <item>
         <title>搜索</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友链</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/%E5%8F%8B%E9%93%BE/</link>
+        <link>http://localhost:1313/%E5%8F%8B%E9%93%BE/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/%E5%8F%8B%E9%93%BE/</guid>
+        <guid>http://localhost:1313/%E5%8F%8B%E9%93%BE/</guid>
         <description></description>
-        </item>
-        <item>
-        <title>远程刷机</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/%E8%BF%9C%E7%A8%8B%E5%88%B7%E6%9C%BA/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://xn--9krq6q.xn--5brr03o.top/%E8%BF%9C%E7%A8%8B%E5%88%B7%E6%9C%BA/</guid>
-        <description>&lt;h2 id=&#34;远程软件todesk-下载todeskhttpswwwtodeskcomdownloadhtml&#34;&gt;&lt;strong&gt;远程软件:TODESK &lt;a class=&#34;link&#34; href=&#34;https://www.todesk.com/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载todesk&lt;/a&gt;&lt;/strong&gt;
-&lt;/h2&gt;&lt;h2 id=&#34;联系方式-微信-lacs177&#34;&gt;&lt;strong&gt;联系方式:&lt;/strong&gt; 微信 LACS177
-&lt;/h2&gt;&lt;h2 id=&#34;业务范围&#34;&gt;&lt;strong&gt;业务范围:&lt;/strong&gt;
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;承接小米全系刷机Root，刷机升级降级，救砖&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;联发科秒解，澎湃解bl，线刷卡刷各种系统&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;注意事项&#34;&gt;注意事项:
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;售前相关&#34;&gt;售前相关
-&lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;仅提供刷机服务，我不是售后，没时间跟你浪费时间&lt;/li&gt;
-&lt;li&gt;先付款后刷机，别跟我提什么没钱过两天给你这些话&lt;/li&gt;
-&lt;li&gt;不成功全额退款，不接黑产类相关业务(改Imei，外挂相关)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;设备相关&#34;&gt;设备相关
-&lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;太卡的电脑收费会增加，（指延迟高，下载龟速，360全家桶）&lt;/li&gt;
-&lt;li&gt;老机型的收费标准跟新机型是一样的，有能力自己弄谢谢&lt;/li&gt;
-&lt;li&gt;需要你有一个良好的精神状态，能听懂人话，不然没法交流&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;隐私相关&#34;&gt;隐私相关
-&lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;我承诺不会对刷机过程录屏、录像、拍照、直播&lt;/li&gt;
-&lt;li&gt;我承诺不会主动获取你的手机、电脑上的隐私信息和文件&lt;/li&gt;
-&lt;li&gt;我承诺发给你的文件都是没有病毒和木马等危险内容&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;服务相关&#34;&gt;服务相关
-&lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;老用户会有折扣（9折以下）（折扣：QQ/VX &amp;gt;闲鱼）&lt;/li&gt;
-&lt;li&gt;刷完之后可以咨询不懂的问题（老板很友善）&lt;/li&gt;
-&lt;li&gt;不免费远程，非公益，混口饭吃，自己会自己弄。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-&lt;!-- 结束上一节的内容 --&gt;
-&lt;section class=&#34;flex flex-col flex-wrap min-w-full mt-4 sm:min-w-0&#34;&gt;
-&lt;!-- 开始一个新的节，使用flex布局，包含列和包裹，最小宽度为全屏，在小型设备上最小宽度为0 --&gt;</description>
         </item>
         
     </channel>

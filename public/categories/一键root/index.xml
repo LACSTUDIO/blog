@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>一键Root on 领创博客</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/categories/%E4%B8%80%E9%94%AEroot/</link>
+        <link>http://localhost:1313/categories/%E4%B8%80%E9%94%AEroot/</link>
         <description>Recent content in 一键Root on 领创博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/categories/%E4%B8%80%E9%94%AEroot/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E4%B8%80%E9%94%AEroot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>小米一键ROOT工具更新日志</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</link>
+        <link>http://localhost:1313/p/roottool/</link>
         <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</guid>
+        <guid>http://localhost:1313/p/roottool/</guid>
         <description>&lt;h1 id=&#34;脚本工具更新日志&#34;&gt;脚本/工具更新日志
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;

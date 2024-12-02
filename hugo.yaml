@@ -1,7 +1,7 @@
 baseurl: https://xn--9krq6q.xn--5brr03o.top/ # 网站的基本URL
 languageCode: zh-cn  # 网站的语言代码
 theme: hugo-theme-stack  # 使用的主题
-paginate: 3  # 每页显示的文章数量
+paginate: 5  # 每页显示的文章数量
 title: 领创博客  # 网站的标题
 copyright: 领创工作室-保留所有权利  # 版权信息
 
@@ -9,8 +9,7 @@ copyright: 领创工作室-保留所有权利  # 版权信息
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
 DefaultContentLanguage: zh-cn  # 默认内容语言
 
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
+
 hasCJKLanguage: false  # 是否启用CJK语言支持
 
 languages:  # 多语言配置
@@ -44,14 +43,18 @@ params:  # 参数配置
         since: 2024  # 指定开始年份
         customText:  # 自定义文本
         
-
+    params:
     dateFormat:
-        published: 08 月 02 日, 2006年
-        lastUpdated: 08 月 02 日, 2006年 15:04 MST
+        published: "2006年01月02日"  # 中文格式
+        lastUpdated: "2006年01月02日 15:04"  # 中文格式
+
+
+
+
 
     sidebar:  # 侧边栏配置
         emoji:  # 侧边栏图标
-        subtitle: 主要分享一些刷机玩机的教程和心得。酷安/b站@领创工作室 # 侧边栏副标题
+        subtitle: 博客.领创.top  酷安/b站@领创工作室 # 侧边栏副标题
         avatar:  # 头像配置
             enabled: true  # 是否启用头像
             local: false  # 头像是否为本地资源
@@ -215,7 +218,7 @@ menu:  # 菜单配置
 
         - identifier: yc
           name: 远程刷机
-          url: /远程刷机/
+          url: /p/ycsj/
           params:
               icon: yc
 

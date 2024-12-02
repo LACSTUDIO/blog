@@ -1,24 +1,25 @@
 ---
 title: 远程刷机
-menu:
-    main: 
-        weight: -90
-        params:
-            icon: user
-
+description:
+date: 2024-06-01
+slug: ycsj
+categories:
+    - 刷机教程
 ---
 
-## **远程软件:TODESK [下载todesk](https://www.todesk.com/download.html)**
+- ## **远程软件:[下载todesk](https://www.todesk.com/download.html)**
 
-## **联系方式:** 微信 LACS177
+- ## **联系方式:** 微信 LACS177
 
-## **业务范围:**
+- ## **业务范围:**
 
-**承接小米全系刷机Root，刷机升级降级，救砖**
 
-**联发科秒解，澎湃解bl，线刷卡刷各种系统**
+> **承接小米全系刷机Root，刷机升级降级，救砖**
+>
+> **联发科秒解，澎湃解bl，线刷卡刷各种系统**
 
-## 注意事项:
+- ## 注意事项:
+
 
 - ### 售前相关
 
@@ -43,11 +44,6 @@ menu:
 1. 老用户会有折扣（9折以下）（折扣：QQ/VX >闲鱼）
 2. 刷完之后可以咨询不懂的问题（老板很友善）
 3. 不免费远程，非公益，混口饭吃，自己会自己弄。
-
-
-
-</section>
-<!-- 结束上一节的内容 -->
 
 <section class="flex flex-col flex-wrap min-w-full mt-4 sm:min-w-0">
 <!-- 开始一个新的节，使用flex布局，包含列和包裹，最小宽度为全屏，在小型设备上最小宽度为0 -->

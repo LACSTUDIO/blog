@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 领创博客</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/post/</link>
+        <link>http://localhost:1313/post/</link>
         <description>Recent content in Posts on 领创博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Fri, 08 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 08 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>小米澎湃OS绕答题解bl锁教程</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</link>
+        <link>http://localhost:1313/p/hyperos_unlocktool/</link>
         <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</guid>
+        <guid>http://localhost:1313/p/hyperos_unlocktool/</guid>
         <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" /&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;h2 id=&#34;点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -62,79 +62,81 @@
 </description>
         </item>
         <item>
-        <title>小米一键ROOT工具更新日志</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</link>
-        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        <title>小米一键root</title>
+        <link>http://localhost:1313/p/roottool/</link>
+        <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/roottool/</guid>
-        <description>&lt;h1 id=&#34;脚本工具更新日志&#34;&gt;脚本/工具更新日志
-&lt;/h1&gt;&lt;ul&gt;
+        <guid>http://localhost:1313/p/roottool/</guid>
+        <description>&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;V5.0.0_Beta  (2024-11-08)&lt;/p&gt;
-&lt;/li&gt;
+&lt;h2 id=&#34;观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;观看视频教程&lt;/a&gt;
+&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;V4.2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;优化Usb3.0补丁的提示&lt;/li&gt;
-&lt;li&gt;智能检测工具使用状态,第二次使用直接进主页&lt;/li&gt;
-&lt;li&gt;修改并添加部分注释&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&#34;更新日志&#34;&gt;更新日志
+&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;更新版本信息:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;V4.1.5&lt;/li&gt;
+&lt;li&gt;V5.0.0_Beta (2024-11-08)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;历史版本:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V4.2&lt;/li&gt;
+&lt;li&gt;优化Usb3.0补丁提示&lt;/li&gt;
+&lt;li&gt;智能检测工具使用状态，第二次使用直接返回主页&lt;/li&gt;
+&lt;li&gt;修改并添加注释&lt;/li&gt;
+&lt;li&gt;V4.1.5
 &lt;ol&gt;
-&lt;li&gt;修复Usb3.0补丁的返回bug和提示的bug&lt;/li&gt;
+&lt;li&gt;修复Usb3.0补丁返回和提示的bug&lt;/li&gt;
 &lt;li&gt;优化部分界面&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;V4.1&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;V4.1
 &lt;ol&gt;
 &lt;li&gt;更改脚本标题&lt;/li&gt;
 &lt;li&gt;添加工具教程功能&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;V4.0&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;V4.0
 &lt;ol&gt;
 &lt;li&gt;优化部分界面&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;V4.0_Beta6&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;V4.0_Beta6
 &lt;ol&gt;
-&lt;li&gt;优化部分界面&lt;/li&gt;
-&lt;li&gt;优化部分功能&lt;/li&gt;
-&lt;li&gt;优化Over后的代码&lt;/li&gt;
+&lt;li&gt;优化界面及功能&lt;/li&gt;
 &lt;li&gt;精简工具目录&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;V4.0_Beta5&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;V4.0_Beta5
 &lt;ol&gt;
-&lt;li&gt;全新改版工具使用逻辑&lt;/li&gt;
+&lt;li&gt;改版工具使用逻辑&lt;/li&gt;
 &lt;li&gt;添加捐赠功能&lt;/li&gt;
-&lt;li&gt;将修补后的boot镜像命名为root.img&lt;/li&gt;
+&lt;li&gt;修补后的boot镜像命名为root.img&lt;/li&gt;
 &lt;li&gt;精简部分功能&lt;/li&gt;
 &lt;li&gt;优化usb3.0补丁脚本&lt;/li&gt;
 &lt;li&gt;添加一键安装Magisk.apk功能&lt;/li&gt;
-&lt;li&gt;工具目录更简洁&lt;/li&gt;
-&lt;li&gt;表明是否测试&lt;/li&gt;
+&lt;li&gt;精简工具目录&lt;/li&gt;
+&lt;li&gt;标明是否测试&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;V3&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;V3
 &lt;ol&gt;
 &lt;li&gt;优化使用逻辑&lt;/li&gt;
 &lt;li&gt;添加查看更新日志功能&lt;/li&gt;
 &lt;li&gt;区分国家版本&lt;/li&gt;
 &lt;li&gt;添加机型代号&lt;/li&gt;
-&lt;li&gt;调整了窗口长度与宽度&lt;/li&gt;
+&lt;li&gt;调整窗口长度与宽度&lt;/li&gt;
 &lt;li&gt;标明发布论坛&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;适配日志&#34;&gt;适配日志
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h1 id=&#34;适配更新日志&#34;&gt;适配更新日志:
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;2023.03.31 K50U MIUI14.0.7&lt;/p&gt;
@@ -155,7 +157,77 @@
 &lt;p&gt;2023.02.04 10U MIUI12.0.15&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
+        </item>
+        <item>
+        <title>远程刷机</title>
+        <link>http://localhost:1313/p/ycsj/</link>
+        <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/ycsj/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;远程软件下载todeskhttpswwwtodeskcomdownloadhtml&#34;&gt;&lt;strong&gt;远程软件:&lt;a class=&#34;link&#34; href=&#34;https://www.todesk.com/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载todesk&lt;/a&gt;&lt;/strong&gt;
+&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;联系方式-微信-lacs177&#34;&gt;&lt;strong&gt;联系方式:&lt;/strong&gt; 微信 LACS177
+&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;业务范围&#34;&gt;&lt;strong&gt;业务范围:&lt;/strong&gt;
+&lt;/h2&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;承接小米全系刷机Root，刷机升级降级，救砖&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联发科秒解，澎湃解bl，线刷卡刷各种系统&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项:
+&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;售前相关&#34;&gt;售前相关
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;仅提供刷机服务，我不是售后，没时间跟你浪费时间&lt;/li&gt;
+&lt;li&gt;先付款后刷机，别跟我提什么没钱过两天给你这些话&lt;/li&gt;
+&lt;li&gt;不成功全额退款，不接黑产类相关业务(改Imei，外挂相关)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;设备相关&#34;&gt;设备相关
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;太卡的电脑收费会增加，（指延迟高，下载龟速，360全家桶）&lt;/li&gt;
+&lt;li&gt;老机型的收费标准跟新机型是一样的，有能力自己弄谢谢&lt;/li&gt;
+&lt;li&gt;需要你有一个良好的精神状态，能听懂人话，不然没法交流&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;隐私相关&#34;&gt;隐私相关
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;我承诺不会对刷机过程录屏、录像、拍照、直播&lt;/li&gt;
+&lt;li&gt;我承诺不会主动获取你的手机、电脑上的隐私信息和文件&lt;/li&gt;
+&lt;li&gt;我承诺发给你的文件都是没有病毒和木马等危险内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;服务相关&#34;&gt;服务相关
+&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;老用户会有折扣（9折以下）（折扣：QQ/VX &amp;gt;闲鱼）&lt;/li&gt;
+&lt;li&gt;刷完之后可以咨询不懂的问题（老板很友善）&lt;/li&gt;
+&lt;li&gt;不免费远程，非公益，混口饭吃，自己会自己弄。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;section class=&#34;flex flex-col flex-wrap min-w-full mt-4 sm:min-w-0&#34;&gt;
+&lt;!-- 开始一个新的节，使用flex布局，包含列和包裹，最小宽度为全屏，在小型设备上最小宽度为0 --&gt;</description>
         </item>
         
     </channel>
