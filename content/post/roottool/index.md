@@ -2,12 +2,10 @@
 title: 小米一键root
 description:
 date: 2024-11-08
-slug: roottool
+slug: root_tool
 categories:
     - 刷机教程
 ---
-
-- ## [观看视频教程](https://www.bilibili.com/video/BV1TuiLezEYK/)
 
 - ## 更新日志
 

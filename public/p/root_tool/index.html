@@ -18,7 +18,9 @@
 <meta name="baidu-site-verification" content="codeva-oJtGFcqrlj" />
 
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -41,7 +43,24 @@
         }
     })();
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+<div class="container main-container flex on-phone--column extended">
+
+
+    <div id="article-toolbar" style="position: sticky;top: 5px;z-index: 1000;">
+        <a href="/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>返回</span>
+        </a>
+    </div>
+
+
+<aside class="sidebar left-sidebar sticky ">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -364,65 +383,16 @@ AABJRU5ErkJggg==" />
         </li>
     </ol>
 </aside>
+  
+
 
     <aside class="sidebar right-sidebar sticky">
         
             
-                <form action="/search/" class="search-form widget" >
-        <p>
-            <label>搜索</label>
-            <input name="keyword" required placeholder="输入关键词..." />
-        
-            <button title="搜索">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-            
-        
-            
-                <section class="widget archives">
+                
+    <section class="widget archives">
         <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">归档</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2024">
-                        
-                            <span class="year">2024</span>
-                            <span class="count">3</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -432,143 +402,25 @@ AABJRU5ErkJggg==" />
 
 
 
-    </div>
-    <h2 class="widget-title section-title">分类</h2>
-
-    <div class="tagCloud-tags">
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
         
-            <a href="/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" class="font_size_3">
-                刷机教程
-            </a>
-        
-    </div>
-</section>
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#更新日志">更新日志</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
 
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">标签云</h2>
-
-    <div class="tagCloud-tags">
-        
-    </div>
-</section>
             
         
     </aside>
-
+  
 
             <main class="main full-width">
-    
-    
-    
-    
-
-
-<div class="welcome">
-    <p style="font-size: 2rem; text-align: center; font-weight: bold">
-      <span class="shake">👋</span>
-      <span class="jump-text1">欢迎来到</span>
-      <span class="jump-text2">领创博客</span>
-      <a href="https://www.xn--5brr03o.top/" target="_blank" style="color:#0087f5">点我访问</a>
-      <span class="jump-text4" style="color:#e99312">领创工作室</span
-      ><span class="jump-text5" style="color:#e99312">官网</span>
-    </p>
-</div>
-
-
-
-  
-    <section class="article-list">
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/hyperos_unlocktool/">
-                
-                    <img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" loading="lazy" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" >
-                刷机教程
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/hyperos_unlocktool/">小米澎湃OS绕答题解bl锁教程</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">2024年11月08日</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 1 分钟
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="">
+    <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
@@ -632,77 +484,174 @@ AABJRU5ErkJggg==" />
 </div>
 
 </header>
-</article>
-        
-            
-<article class="">
-    <header class="article-header">
 
-    <div class="article-details">
+    <section class="article-content">
     
-    <header class="article-category">
-        
-            <a href="/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" >
-                刷机教程
-            </a>
-        
-    </header>
+    
+    <ul>
+<li>
+<h2 id="更新日志">更新日志
+</h2></li>
+<li>
+<p><strong>更新版本信息:</strong></p>
+<ul>
+<li>V5.0.0_Beta (2024-11-08)</li>
+</ul>
+</li>
+<li>
+<p><strong>历史版本:</strong></p>
+<ul>
+<li>V4.2</li>
+<li>优化Usb3.0补丁提示</li>
+<li>智能检测工具使用状态，第二次使用直接返回主页</li>
+<li>修改并添加注释</li>
+<li>V4.1.5
+<ol>
+<li>修复Usb3.0补丁返回和提示的bug</li>
+<li>优化部分界面</li>
+</ol>
+</li>
+<li>V4.1
+<ol>
+<li>更改脚本标题</li>
+<li>添加工具教程功能</li>
+</ol>
+</li>
+<li>V4.0
+<ol>
+<li>优化部分界面</li>
+</ol>
+</li>
+<li>V4.0_Beta6
+<ol>
+<li>优化界面及功能</li>
+<li>精简工具目录</li>
+</ol>
+</li>
+<li>V4.0_Beta5
+<ol>
+<li>改版工具使用逻辑</li>
+<li>添加捐赠功能</li>
+<li>修补后的boot镜像命名为root.img</li>
+<li>精简部分功能</li>
+<li>优化usb3.0补丁脚本</li>
+<li>添加一键安装Magisk.apk功能</li>
+<li>精简工具目录</li>
+<li>标明是否测试</li>
+</ol>
+</li>
+<li>V3
+<ol>
+<li>优化使用逻辑</li>
+<li>添加查看更新日志功能</li>
+<li>区分国家版本</li>
+<li>添加机型代号</li>
+<li>调整窗口长度与宽度</li>
+<li>标明发布论坛</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="适配更新日志">适配更新日志:
+</h1><ul>
+<li>
+<p>2023.03.31 K50U MIUI14.0.7</p>
+</li>
+<li>
+<p>2023.03.29 K50U MIUI14.0.5</p>
+</li>
+<li>
+<p>2023.03.26 K50U MIUI13.0.7</p>
+</li>
+<li>
+<p>2023.03.06 K20Pro/尊享版 MIUI12.5.6</p>
+</li>
+<li>
+<p>2023.02.20 K50U MIUI13.0.4</p>
+</li>
+<li>
+<p>2023.02.04 10U MIUI12.0.15</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
     
 
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/ycsj/">远程刷机</a>
-        </h2>
     
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">2024年06月01日</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
 </svg>
 
 
 
-                <time class="article-time--reading">
-                    阅读时长: 1 分钟
-                </time>
+        <span>2024-领创工作室-保留所有权利</span>
+    </section>
+    </footer>
+
+
+    
+</article>  
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/hyperos_unlocktool/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" loading="lazy" data-key="HyperOS_UnlockTool" data-hash="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg"/>
+                
             </div>
         
-    </footer>
-    
 
-    
-</div>
-
-</header>
+        <div class="article-details">
+            <h2 class="article-title">小米澎湃OS绕答题解bl锁教程</h2>
+        </div>
+    </a>
 </article>
+
+            
+                
+<article class="">
+    <a href="/p/ycsj/">
         
-    </section>
-<footer class="site-footer">
+        
+
+        <div class="article-details">
+            <h2 class="article-title">远程刷机</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+  
+     
+    
+          
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -714,6 +663,85 @@ AABJRU5ErkJggg==" />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
+  
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >  
 
             </main>
         </div>
