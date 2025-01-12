@@ -15,7 +15,7 @@ categories:
 
 
 
-> *API接口是**应用程序编程接口**，是软件系统中不同组件或应用间交互的规则和定义，允许开发者通过特定的函数、方法或类实现数据交换与功能调用。*
+> *API接口全程是**应用程序编程接口**，是软件系统中不同组件或应用间交互的规则和定义，*
 >
 > *API接口 大都是基于 HTTP 协议的，所以，要进行接口测试 首先要了解 HTTP 协议 的 基础知识*
 
@@ -29,14 +29,14 @@ categories:
 
    > - 客户端 先发送 http请求（request）给 服务端
    > - 然后服务端 发送 http响应（response）给 客户端
-   > - 服务端不能主动先发送信息给 客户端
+   > - 
    > - ![img](https://www.runoob.com/wp-content/uploads/2013/11/231-O-Que-E-Request-E-Response-02.jpg)
 
 3. ![PixPin_2025-01-12_19-24-08](C:\Users\lican\Pictures\PixPin\Temp\PixPin_2025-01-12_19-24-08.png)
 
 
 
-> 1. ​	请求URL	
+> 1. ​	请求行
 >
 >    ![PixPin_2025-01-12_19-43-40](C:\Users\lican\Pictures\PixPin\Temp\PixPin_2025-01-12_19-43-40.png)
 >
@@ -55,6 +55,8 @@ categories:
 > ​	请求头
 >
 > ​	响应头
+>
+> ​	响应体
 
 # 2.接口测试的原理....
 
