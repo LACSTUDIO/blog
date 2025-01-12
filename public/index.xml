@@ -7,29 +7,110 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>小米手机打开USB调试教程</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/xiaomi_usb_course/</link>
-        <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>API接口测试</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/api_test/</link>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/xiaomi_usb_course/</guid>
-        <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米手机打开USB调试教程" /&gt;&lt;ul&gt;
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/api_test/</guid>
+        <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&#34;1api接口的概念&#34;&gt;1.API接口的概念..
+&lt;/h1&gt;&lt;h2 id=&#34;1什么是接口&#34;&gt;1.什么是接口
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;API接口是&lt;strong&gt;应用程序编程接口&lt;/strong&gt;，是软件系统中不同组件或应用间交互的规则和定义，允许开发者通过特定的函数、方法或类实现数据交换与功能调用。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;API接口 大都是基于 HTTP 协议的，所以，要进行接口测试 首先要了解 HTTP 协议 的 基础知识&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;2http协议&#34;&gt;2.HTTP协议
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;h2 id=&#34;点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点我观看视频教程&lt;/a&gt;
-&lt;/h2&gt;&lt;/li&gt;
+&lt;p&gt;HTTP 协议 全称是 超文本传输协议&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP 协议最大的特点是 通讯双方 分为 &lt;code&gt;客户端&lt;/code&gt; 和 &lt;code&gt;服务端&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;客户端 先发送 http请求（request）给 服务端&lt;/li&gt;
+&lt;li&gt;然后服务端 发送 http响应（response）给 客户端&lt;/li&gt;
+&lt;li&gt;服务端不能主动先发送信息给 客户端&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://www.runoob.com/wp-content/uploads/2013/11/231-O-Que-E-Request-E-Response-02.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;第一步&lt;/li&gt;
-&lt;li&gt;第二步&lt;/li&gt;
-&lt;li&gt;第三步&lt;/li&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-24-08.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PixPin_2025-01-12_19-24-08&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;​	请求URL&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-43-40.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PixPin_2025-01-12_19-43-40&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-29-42.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PixPin_2025-01-12_19-29-42&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;2xx - 成功状态码&lt;/p&gt;
+&lt;p&gt;3xx - 重定向状态码&lt;/p&gt;
+&lt;p&gt;4xx - 客户端错误状态码&lt;/p&gt;
+&lt;p&gt;5xx - 服务器错误状态码&lt;/p&gt;
+&lt;p&gt;​	请求头&lt;/p&gt;
+&lt;p&gt;​	响应头&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;2接口测试的原理&#34;&gt;2.接口测试的原理&amp;hellip;.
+&lt;/h1&gt;&lt;p&gt;接口测试主要验证接口的功能是否按照预期工作，确保接口之间能够正确地进行数据交互和协同工作。&lt;/p&gt;
+&lt;h4 id=&#34;理解接口需求和文档&#34;&gt;理解接口需求和文档
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;详细阅读接口文档&lt;/strong&gt;：了解接口的URL、请求方法、请求参数、请求头、返回参数、状态码及含义等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;明确接口功能&lt;/strong&gt;：理解接口在业务流程中的作用和目的，确定需要测试的功能点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-确定测试点&#34;&gt;2. 确定测试点
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能测试&lt;/strong&gt;：验证接口功能是否正确，包括正常功能测试、边界值测试、异常测试等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能测试&lt;/strong&gt;：评估接口的响应时间、吞吐量、并发处理能力等性能指标。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全测试&lt;/strong&gt;：检查接口的安全机制，如认证和授权、数据加密、输入验证等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3接口测试用例的编写&#34;&gt;3.接口测试用例的编写&amp;hellip;.
+&lt;/h1&gt;</description>
         </item>
         <item>
         <title>小米澎湃OS绕答题解bl锁教程</title>
         <link>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</link>
-        <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</guid>
         <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" /&gt;&lt;ul&gt;
@@ -40,7 +121,13 @@
 &lt;li&gt;
 &lt;h2 id=&#34;更新日志&#34;&gt;更新日志
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;2024-11-09 22:00 &lt;strong&gt;V1.5&lt;/strong&gt; 更新日志:
+&lt;li&gt;2025-01-12 12:00 &lt;strong&gt;V1.5&lt;/strong&gt;  更新日志:
+&lt;ol&gt;
+&lt;li&gt;更改整体编码为UTF-8，更改艺术字样式（迫不得已）&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;2024-11-09 22:00 &lt;strong&gt;V1.5Beta&lt;/strong&gt; 更新日志:
 &lt;ol&gt;
 &lt;li&gt;重构使用逻辑，重构整体框架，采用重要功能单独脚本的整体框架结构&lt;/li&gt;
 &lt;li&gt;进软件后智能检测机型系统版本等信息，然后做出判断是否可以通过绕答题方式解锁手机&lt;/li&gt;
@@ -77,7 +164,36 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;计划&#34;&gt;计划
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;V1.6
+&lt;ol&gt;
+&lt;li&gt;可以更换主题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>小米手机打开USB调试教程</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/xiaomi_usb_course/</link>
+        <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/xiaomi_usb_course/</guid>
+        <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米手机打开USB调试教程" /&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点我观看视频教程&lt;/a&gt;
+&lt;/h2&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;第一步&lt;/li&gt;
+&lt;li&gt;第二步&lt;/li&gt;
+&lt;li&gt;第三步&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
