@@ -1,8 +1,8 @@
 baseurl: https://xn--9krq6q.xn--5brr03o.top/ # 网站的基本URL
-languageCode: zh-cn  # 网站的语言代码
+languageCode: zh-cn  # 网站的语言
 theme: hugo-theme-stack  # 使用的主题
 paginate: 5  # 每页显示的文章数量
-title: 领创博客  # 网站的标题
+title: 领创博客-领创工作室-博客.领创.top  # 网站的标题
 copyright: 领创工作室-保留所有权利  # 版权信息
 
 # Theme i18n support
@@ -236,19 +236,19 @@ related:  # 相关内容配置
           weight: 200
 
 markup:  # 标记配置
-    goldmark:
-        renderer:
+    goldmark:  # Goldmark 相关配置
+        renderer:  # 渲染器配置
             ## Set to true if you have HTML content inside Markdown
-            unsafe: true
-    tableOfContents:
-        endLevel: 4
-        ordered: true
-        startLevel: 2
-    highlight:
-        noClasses: false
-        codeFences: true
-        guessSyntax: true
-        lineNoStart: 1
-        lineNos: true
-        lineNumbersInTable: true
-        tabWidth: 4
+            unsafe: true  # 是否允许 HTML 内容
+    tableOfContents:  # 目录配置
+        endLevel: 4  # 目录结束层级
+        ordered: true  # 是否有序
+        startLevel: 2  # 目录开始层级
+    highlight:  # 代码高亮配置
+        noClasses: false  # 是否移除类
+        codeFences: true  # 是否支持代码块
+        guessSyntax: true  # 是否自动推测语法
+        lineNoStart: 1  # 行号起始值
+        lineNos: true  # 是否显示行号
+        lineNumbersInTable: true  # 是否在表格中显示行号
+        tabWidth: 4  # 制表符宽度
