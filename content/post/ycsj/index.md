@@ -7,11 +7,11 @@ categories:
     - 刷机教程
 ---
 
-- ## **远程软件:[下载todesk](https://www.todesk.com/download.html)**
+## **远程软件:[下载todesk](https://www.todesk.com/download.html)**
 
-- ## **联系方式:** 微信 LACS177
+## **联系方式:** 微信 LACS177
 
-- ## **业务范围:**
+## **业务范围:**
 
 
 > **承接小米全系刷机Root，刷机升级降级，救砖**

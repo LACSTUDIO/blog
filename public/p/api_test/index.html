@@ -428,21 +428,23 @@ AABJRU5ErkJggg==" />
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#1什么是接口">1.什么是接口</a></li>
-    <li><a href="#2http协议">2.HTTP协议</a></li>
+    <li><a href="#loadrunner是什么">LoadRunner是什么</a>
+      <ol>
+        <li><a href="#loadrunner-是一款性能测试工具主要用于评估系统在高负载条件下的性能表现">LoadRunner 是一款性能测试工具，主要用于评估系统在高负载条件下的性能表现。</a></li>
+        <li><a href="#它通过模拟大量虚拟用户并发访问系统帮助测试人员发现并优化性能瓶颈确保系统的稳定性和可靠性">它通过模拟大量虚拟用户并发访问系统，帮助测试人员发现并优化性能瓶颈，确保系统的稳定性和可靠性。</a></li>
+      </ol>
+    </li>
+    <li><a href="#loadrunner的构成">LoadRunner的构成</a>
+      <ol>
+        <li><a href="#loadrunner-由三个主要组件构成">LoadRunner 由三个主要组件构成：</a></li>
+        <li><a href="#这些组件协同工作使-loadrunner-能够全面覆盖从脚本创建到结果分析的整个性能测试流程">这些组件协同工作，使 LoadRunner 能够全面覆盖从脚本创建到结果分析的整个性能测试流程。</a></li>
+      </ol>
+    </li>
   </ol>
 
   <ol>
-    <li>
-      <ol>
-        <li>
-          <ol>
-            <li><a href="#理解接口需求和文档">理解接口需求和文档</a></li>
-            <li><a href="#2-确定测试点">2. 确定测试点</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
+    <li><a href="#设计方案">设计方案：</a></li>
+    <li><a href="#运行时">运行时</a></li>
   </ol>
 </nav>
         </div>
@@ -470,7 +472,7 @@ AABJRU5ErkJggg==" />
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/api_test/">API接口测试</a>
+            <a href="/p/api_test/">loadrunner</a>
         </h2>
     
         
@@ -492,7 +494,7 @@ AABJRU5ErkJggg==" />
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025年01月12日</time>
+                <time class="article-time--published">2025年01月14日</time>
             </div>
         
 
@@ -522,100 +524,150 @@ AABJRU5ErkJggg==" />
     <section class="article-content">
     
     
-    <p>[TOC]</p>
-<h1 id="1api接口的概念">1.API接口的概念..
-</h1><h2 id="1什么是接口">1.什么是接口
-</h2><blockquote>
-<p><em>API接口全程是<strong>应用程序编程接口</strong>，是软件系统中不同组件或应用间交互的规则和定义，</em></p>
-<p><em>API接口 大都是基于 HTTP 协议的，所以，要进行接口测试 首先要了解 HTTP 协议 的 基础知识</em></p>
-</blockquote>
-<h2 id="2http协议">2.HTTP协议
-</h2><ol>
+    <h1 id="1loadrunner的概述">1.LoadRunner的概述
+</h1><h2 id="loadrunner是什么">LoadRunner是什么
+</h2><h3 id="loadrunner-是一款性能测试工具主要用于评估系统在高负载条件下的性能表现">LoadRunner 是一款性能测试工具，主要用于评估系统在高负载条件下的性能表现。
+</h3><h3 id="它通过模拟大量虚拟用户并发访问系统帮助测试人员发现并优化性能瓶颈确保系统的稳定性和可靠性">它通过模拟大量虚拟用户并发访问系统，帮助测试人员发现并优化性能瓶颈，确保系统的稳定性和可靠性。
+</h3><h2 id="loadrunner的构成">LoadRunner的构成
+</h2><h3 id="loadrunner-由三个主要组件构成">LoadRunner 由三个主要组件构成：
+</h3><ul>
+<li>Virtual User Generator (VUG) 用于录制和编辑测试脚本；</li>
+<li>Controller 用于设计测试场景、管理虚拟用户和监控测试过程；</li>
+<li>Analysis 用于分析测试结果并生成报告。</li>
+</ul>
+<h3 id="这些组件协同工作使-loadrunner-能够全面覆盖从脚本创建到结果分析的整个性能测试流程">这些组件协同工作，使 LoadRunner 能够全面覆盖从脚本创建到结果分析的整个性能测试流程。
+</h3><h1 id="2loadrunner的使用">2.LoadRunner的使用
+</h1><ol>
 <li>
-<p>HTTP 协议 全称是 超文本传输协议</p>
+<p>录制回放</p>
 </li>
 <li>
-<p>HTTP 协议最大的特点是 通讯双方 分为 <code>客户端</code> 和 <code>服务端</code></p>
-<blockquote>
+<p>思考时间</p>
+<p><code>lr_think_time(7);</code></p>
+</li>
+<li>
+<p>检查点</p>
+<p><code>web_reg_find(&quot;Text=个人中心&quot;,     LAST);</code></p>
+<p>用于验证应用程序在特定操作后的响应是否符合预期。检查点可以帮助你确保应用程序在性能测试过程中不仅能够响应请求，而且响应的内容也是正确的。</p>
+</li>
+<li>
+<p>关联</p>
+<p><code>web_reg_save_param_ex</code>函数</p>
+<p>关联是指在脚本回放过程中，动态地获取并使用服务器响应中的数据，以替换录制时的静态数据。这些动态数据通常包括会话标识符（如 <code>JSESSIONID</code>）、令牌（如 <code>CSRF Token</code>）、时间戳、用户生成的数据等。</p>
+</li>
+<li>
+<p>参数化</p>
+<p>参数化是指在脚本中使用变量来替换静态数据，使脚本能够模拟多个用户使用不同的数据进行操作，从而更真实地反映系统的性能表现。</p>
+<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-16_23-21-24.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="PixPin_2025-01-16_23-21-24"
+	
+	
+></p>
+<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-16_23-22-26.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="PixPin_2025-01-16_23-22-26"
+	
+	
+></p>
+<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-16_23-23-37.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="PixPin_2025-01-16_23-23-37"
+	
+	
+></p>
+</li>
+<li>
+<p>事务与集合点</p>
+<p><strong>事务</strong>：事务用于测量特定操作的性能，如登录、提交表单等。通过在脚本中插入事务开始和结束的标记，可以记录这些操作的响应时间。</p>
+<p><strong>集合点</strong>：集合点用于模拟多个用户同时执行某个操作，以测试系统的并发处理能力。</p>
+</li>
+<li>
+<p>场景设计与运行</p>
+<p>场景设计是指在 Controller 中设置虚拟用户（VUsers）的数量、启动和停止策略、运行时的监控等，以模拟真实的用户负载。</p>
+<h2 id="设计方案">设计方案：
+</h2><p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-16_20-23-23.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="PixPin_2025-01-16_20-23-23"
+	
+	
+></p>
 <ul>
-<li>客户端 先发送 http请求（request）给 服务端</li>
-<li>然后服务端 发送 http响应（response）给 客户端</li>
-<li></li>
-<li><img src="https://www.runoob.com/wp-content/uploads/2013/11/231-O-Que-E-Request-E-Response-02.jpg"
+<li>
+<p>初始化：</p>
+<p><img src="D:%5cdownload%5cPixPin_2025-01-16_20-20-52.png"
 	
 	
 	
 	loading="lazy"
 	
-		alt="img"
+		alt="PixPin_2025-01-16_20-20-52"
 	
 	
-></li>
-</ul>
-</blockquote>
+></p>
+<p>每2秒启动一个用户 共10个用户</p>
 </li>
 <li>
-<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-24-08.png"
+<p>持续运行2分钟</p>
+</li>
+<li>
+<p>新增5个用户 直接启动</p>
+</li>
+<li>
+<p>持续运行2分钟</p>
+</li>
+<li>
+<p>停止5个用户 立即</p>
+</li>
+<li>
+<p>持续运行2分钟</p>
+</li>
+<li>
+<p>停止所有用户 每隔2秒停止1个用户</p>
+</li>
+</ul>
+<h2 id="运行时">运行时
+</h2><p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-16_20-30-15.png"
 	
 	
 	
 	loading="lazy"
 	
-		alt="PixPin_2025-01-12_19-24-08"
+		alt="PixPin_2025-01-16_20-30-15"
+	
+	
+></p>
+</li>
+<li>
+<p>结果分析</p>
+<p>结果分析是指在测试完成后，通过分析生成的报告和图表，评估系统的性能表现，找出性能瓶颈和问题。</p>
+<p><img src="D:%5cdownload%5cPixPin_2025-01-17_17-24-47.png"
+	
+	
+	
+	loading="lazy"
 	
 	
 ></p>
 </li>
 </ol>
-<blockquote>
-<ol>
-<li>
-<p>​	请求行</p>
-<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-43-40.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="PixPin_2025-01-12_19-43-40"
-	
-	
-></p>
-</li>
-</ol>
-<p><img src="C:%5cUsers%5clican%5cPictures%5cPixPin%5cTemp%5cPixPin_2025-01-12_19-29-42.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="PixPin_2025-01-12_19-29-42"
-	
-	
-></p>
-<p>2xx - 成功状态码</p>
-<p>3xx - 重定向状态码</p>
-<p>4xx - 客户端错误状态码</p>
-<p>5xx - 服务器错误状态码</p>
-<p>​	请求头</p>
-<p>​	响应头</p>
-<p>​	响应体</p>
-</blockquote>
-<h1 id="2接口测试的原理">2.接口测试的原理&hellip;.
-</h1><p>接口测试主要验证接口的功能是否按照预期工作，确保接口之间能够正确地进行数据交互和协同工作。</p>
-<h4 id="理解接口需求和文档">理解接口需求和文档
-</h4><ul>
-<li><strong>详细阅读接口文档</strong>：了解接口的URL、请求方法、请求参数、请求头、返回参数、状态码及含义等。</li>
-<li><strong>明确接口功能</strong>：理解接口在业务流程中的作用和目的，确定需要测试的功能点。</li>
-</ul>
-<h4 id="2-确定测试点">2. 确定测试点
-</h4><ul>
-<li><strong>功能测试</strong>：验证接口功能是否正确，包括正常功能测试、边界值测试、异常测试等。</li>
-<li><strong>性能测试</strong>：评估接口的响应时间、吞吐量、并发处理能力等性能指标。</li>
-<li><strong>安全测试</strong>：检查接口的安全机制，如认证和授权、数据加密、输入验证等。</li>
-</ul>
-<h1 id="3接口测试用例的编写">3.接口测试用例的编写&hellip;.
-</h1>
+
 </section>
 
 
@@ -643,6 +695,41 @@ AABJRU5ErkJggg==" />
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/jmeter/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">JMeter</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/loadrunner/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">LoadRunner</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
   
      
     

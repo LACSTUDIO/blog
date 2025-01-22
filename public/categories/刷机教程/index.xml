@@ -7,23 +7,262 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>adb fastboot 常用指令及其相关内容</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/adbfastboot/</link>
+        <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/adbfastboot/</guid>
+        <description>&lt;h1 id=&#34;adbandroid-debug-bridge相关&#34;&gt;ADB（Android Debug Bridge）相关
+&lt;/h1&gt;&lt;h2 id=&#34;1adb简介&#34;&gt;1.ADB简介
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;adb&lt;/code&gt;（Android Debug Bridge 直译为&lt;strong&gt;安卓调试桥&lt;/strong&gt;）是一个功能强大的命令行工具，主要用于与Android设备进行交互。它可以在多种情况下使用，但是否可以用于关机操作取决于设备的系统权限和当前状态。&lt;/p&gt;
+&lt;h2 id=&#34;2adb-使用方法&#34;&gt;2.&lt;strong&gt;ADB 使用方法&lt;/strong&gt;
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;设备连接状态&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb&lt;/code&gt; 需要设备通过 USB 连接或通过网络连接到计算机或其他移到设备。&lt;/li&gt;
+&lt;li&gt;设备必须启用“开发者选项”中的“USB 调试”功能。&lt;/li&gt;
+&lt;li&gt;如果设备已连接到网络，也可以通过 &lt;code&gt;adb tcpip&lt;/code&gt; 命令进行无线调试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设备状态&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;设备必须处于正常启动状态，即系统已经加载并运行。&lt;/li&gt;
+&lt;li&gt;如果设备处于 Recovery 模式或 Fastboot 模式，&lt;code&gt;adb&lt;/code&gt; 的功能会受到限制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3adb-常用指令&#34;&gt;3.ADB 常用指令
+&lt;/h2&gt;&lt;h3 id=&#34;1-设备连接与状态&#34;&gt;1. &lt;strong&gt;设备连接与状态&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb devices&lt;/code&gt;：列出已连接的设备。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb get-state&lt;/code&gt;：获取设备状态（如 &lt;code&gt;device&lt;/code&gt;、&lt;code&gt;offline&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb connect &amp;lt;IP:端口&amp;gt;&lt;/code&gt;：远程连接设备。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb disconnect &amp;lt;IP:端口&amp;gt;&lt;/code&gt;：断开设备连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-设备操作&#34;&gt;2. &lt;strong&gt;设备操作&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb reboot&lt;/code&gt;：重启设备至系统。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb reboot bootloader&lt;/code&gt;：重启设备至 Fastboot 模式。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb reboot recovery&lt;/code&gt;：重启设备至 Recovery 模式。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb reboot edl&lt;/code&gt;：重启设备至 EDL 模式（高通）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb reboot fastboot&lt;/code&gt;: 重启设备至fastbootd模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-文件传输&#34;&gt;3. &lt;strong&gt;文件传输&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb push &amp;lt;电脑文件路径&amp;gt; &amp;lt;设备目录&amp;gt;&lt;/code&gt;：将文件从电脑传输到设备。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb pull &amp;lt;设备文件路径&amp;gt; &amp;lt;电脑目录&amp;gt;&lt;/code&gt;：将文件从设备传输到电脑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-应用管理&#34;&gt;4. &lt;strong&gt;应用管理&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb install &amp;lt;APK路径&amp;gt;&lt;/code&gt;：安装 APK。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb install -r &amp;lt;APK路径&amp;gt;&lt;/code&gt;：覆盖安装 APK。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb uninstall &amp;lt;包名&amp;gt;&lt;/code&gt;：卸载应用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb uninstall -k &amp;lt;包名&amp;gt;&lt;/code&gt;：卸载应用但保留数据。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell pm list packages&lt;/code&gt;：列出所有应用包名。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell pm list packages -3&lt;/code&gt;：列出第三方应用包名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-系统信息&#34;&gt;5. &lt;strong&gt;系统信息&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb shell getprop&lt;/code&gt; ：获取设备的全部信息。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell getprop ro.product.model&lt;/code&gt;：获取设备型号。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb get-serialno&lt;/code&gt;：获取设备序列号。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell dumpsys meminfo &amp;lt;包名&amp;gt;&lt;/code&gt;：查看应用内存使用情况。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell cat /proc/cpuinfo&lt;/code&gt;：获取 CPU 信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-其他&#34;&gt;6. &lt;strong&gt;其他&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;adb logcat&lt;/code&gt;：查看设备日志。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb shell&lt;/code&gt;：进入设备 Shell。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb root&lt;/code&gt;：以 root 权限运行。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb remount&lt;/code&gt;：重新挂载文件系统。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;fastboot-相关&#34;&gt;Fastboot 相关
+&lt;/h1&gt;&lt;h2 id=&#34;1fastboot简介&#34;&gt;1.FASTBOOT简介
+&lt;/h2&gt;&lt;p&gt;Fastboot 是一个功能强大的工具，主要用于 Android 设备的低级别操作，如刷机、解锁 Bootloader、分区管理等。它通过命令行与设备的 Bootloader 交互，广泛应用于系统更新、故障排除和自定义 ROM 安装。&lt;/p&gt;
+&lt;h2 id=&#34;2fastboot使用方法&#34;&gt;2.FASTBOOT使用方法
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;通过命令&lt;/strong&gt;：使用 &lt;code&gt;adb reboot bootloader&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;通过按键&lt;/strong&gt;：根据设备型号，通常按住音量减键（Vol-）+ 电源键开机。&lt;/p&gt;
+&lt;p&gt;​			小米设备为音量-和电源。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3fastboot常用指令&#34;&gt;3.FASTBOOT常用指令
+&lt;/h2&gt;&lt;h3 id=&#34;1-设备连接与状态-1&#34;&gt;1. &lt;strong&gt;设备连接与状态&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fastboot devices&lt;/code&gt;：列出已连接的 Fastboot 设备。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastboot getvar all&lt;/code&gt;：获取设备详细信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-设备操作-1&#34;&gt;2. &lt;strong&gt;设备操作&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fastboot reboot&lt;/code&gt;：重启设备。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastboot reboot-bootloader&lt;/code&gt;：重启到 Bootloader 模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-分区操作&#34;&gt;3. &lt;strong&gt;分区操作&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fastboot flash &amp;lt;分区名&amp;gt; &amp;lt;文件路径&amp;gt;&lt;/code&gt;：烧录/刷入分区（如 &lt;code&gt;boot&lt;/code&gt;、&lt;code&gt;system&lt;/code&gt;、&lt;code&gt;recovery&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastboot erase &amp;lt;分区名&amp;gt;&lt;/code&gt;：擦除分区。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastboot format &amp;lt;分区名&amp;gt;&lt;/code&gt;：格式化分区。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-解锁与安全不要乱用每个品牌都有不同的方式&#34;&gt;4. &lt;strong&gt;解锁与安全（不要乱用，每个品牌都有不同的方式）&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fastboot flashing unlock&lt;/code&gt; 或 &lt;code&gt;fastboot oem unlock&lt;/code&gt;：解锁 Bootloader。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastboot flashing lock&lt;/code&gt; 或 &lt;code&gt;fastboot oem lock&lt;/code&gt;：锁定 Bootloader。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;如何在-windowsmacos-linux-系统中使用-adb-和-fastboot指令&#34;&gt;如何在 Windows、macOS 、Linux 系统中使用 ADB 和 Fastboot指令
+&lt;/h1&gt;&lt;h2 id=&#34;注意事项&#34;&gt;&lt;strong&gt;注意事项&lt;/strong&gt;
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;设备兼容性&lt;/strong&gt;：不同设备可能需要特定的 USB 驱动程序或配置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;备份数据&lt;/strong&gt;：在进行刷机或解锁操作前，建议备份设备数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;权限问题&lt;/strong&gt;：在 Linux 和 macOS 上，可能需要使用 &lt;code&gt;sudo&lt;/code&gt; 来运行某些命令。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-windows-系统&#34;&gt;&lt;strong&gt;1. Windows 系统&lt;/strong&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;11-安装-adb-和-fastboot&#34;&gt;&lt;strong&gt;1.1 安装 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;下载平台工具&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;访问 &lt;a class=&#34;link&#34; href=&#34;https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Android SDK Platform-Tools&lt;/a&gt; 页面，下载最新版本的 &lt;code&gt;platform-tools.zip&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;或点击https://pan.quark.cn/s/e8b98954568a，快速下载。&lt;/li&gt;
+&lt;li&gt;解压下载的文件到一个方便访问的目录，例如 &lt;code&gt;C:\adb&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装驱动程序&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;对于某些设备，可能需要安装额外的 USB 驱动程序。可以从设备制造商的官方网站下载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;配置环境变量（可选）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;将 ADB 和 Fastboot 的路径（例如 &lt;code&gt;C:\adb&lt;/code&gt;）添加到系统的环境变量中，这样可以在任何位置运行命令。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;12-使用-adb-和-fastboot&#34;&gt;&lt;strong&gt;1.2 使用 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;打开命令提示符或 PowerShell&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在文件夹中按 &lt;code&gt;Shift + 右键&lt;/code&gt;，选择“在此处打开 PowerShell 窗口”。&lt;/li&gt;
+&lt;li&gt;如果未添加环境变量，需要在命令前加上路径，例如 &lt;code&gt;.\adb devices&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-macos-系统&#34;&gt;&lt;strong&gt;2. macOS 系统&lt;/strong&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;21-安装-adb-和-fastboot&#34;&gt;&lt;strong&gt;2.1 安装 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;使用 Homebrew 安装&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装 Homebrew（如果尚未安装）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在终端中运行以下命令安装 ADB 和 Fastboot：&lt;/p&gt;
+&lt;p&gt;bash复制&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install --cask android-platform-tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后，ADB 和 Fastboot 工具将位于 &lt;code&gt;/usr/local/bin&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;验证安装&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;检查 ADB 版本：&lt;code&gt;adb version&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;检查 Fastboot 版本：&lt;code&gt;fastboot version&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;22-使用-adb-和-fastboot&#34;&gt;&lt;strong&gt;2.2 使用 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;检查设备连接&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;启用设备的 USB 调试模式，然后运行 &lt;code&gt;adb devices&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 Fastboot 模式：&lt;code&gt;adb reboot bootloader&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Fastboot 模式下检查设备：&lt;code&gt;fastboot devices&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-linux-系统&#34;&gt;&lt;strong&gt;3. Linux 系统&lt;/strong&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;31-安装-adb-和-fastboot&#34;&gt;&lt;strong&gt;3.1 安装 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;下载平台工具&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;访问 &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/releases/platform-tools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Android SDK Platform-Tools&lt;/a&gt; 页面，下载最新版本的 &lt;code&gt;platform-tools.zip&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;解压文件到一个目录，例如 &lt;code&gt;~/Android/Sdk/platform-tools&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置 udev 规则（可选）&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创建或编辑 &lt;code&gt;/etc/udev/rules.d/70-android.rules&lt;/code&gt; 文件，添加设备的 USB 规则：&lt;/p&gt;
+&lt;p&gt;bash复制&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;SUBSYSTEM&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;usb&amp;#34;&lt;/span&gt;, ATTR&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;idVendor&lt;span class=&#34;o&#34;&gt;}==&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0e8d&amp;#34;&lt;/span&gt;, &lt;span class=&#34;nv&#34;&gt;MODE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0666&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新加载 udev 规则：&lt;code&gt;sudo udevadm control --reload-rules&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;32-使用-adb-和-fastboot&#34;&gt;&lt;strong&gt;3.2 使用 ADB 和 Fastboot&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;检查设备连接&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;启用设备的 USB 调试模式，然后运行 &lt;code&gt;./adb devices&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;进入 Fastboot 模式：&lt;code&gt;./adb reboot bootloader&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;在 Fastboot 模式下检查设备：&lt;code&gt;./fastboot devices&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;刷机操作&lt;/strong&gt;：&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>小米澎湃OS绕答题解bl锁教程</title>
         <link>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</link>
         <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://xn--9krq6q.xn--5brr03o.top/p/hyperos_unlocktool/</guid>
-        <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" /&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" /&gt;&lt;h2 id=&#34;点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1TuiLezEYK/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点我观看视频教程&lt;/a&gt;
-&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;更新日志&#34;&gt;更新日志
+&lt;/h2&gt;&lt;h2 id=&#34;更新日志&#34;&gt;更新日志
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;2025-01-12 12:00 &lt;strong&gt;V1.5&lt;/strong&gt;  更新日志:
 &lt;ol&gt;
-&lt;li&gt;更改整体编码为UTF-8，更改艺术字样式（迫不得已）&lt;/li&gt;
+&lt;li&gt;更改整体编码为GB18030,更改bat代码逻辑，更改log和配置文件的读写&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
@@ -63,16 +302,12 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;h2 id=&#34;计划&#34;&gt;计划
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;V1.6
 &lt;ol&gt;
 &lt;li&gt;可以更换主题&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -179,19 +414,11 @@
         <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
         
         <guid>https://xn--9krq6q.xn--5brr03o.top/p/ycsj/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;远程软件下载todeskhttpswwwtodeskcomdownloadhtml&#34;&gt;&lt;strong&gt;远程软件:&lt;a class=&#34;link&#34; href=&#34;https://www.todesk.com/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;h2 id=&#34;远程软件下载todeskhttpswwwtodeskcomdownloadhtml&#34;&gt;&lt;strong&gt;远程软件:&lt;a class=&#34;link&#34; href=&#34;https://www.todesk.com/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载todesk&lt;/a&gt;&lt;/strong&gt;
-&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;联系方式-微信-lacs177&#34;&gt;&lt;strong&gt;联系方式:&lt;/strong&gt; 微信 LACS177
-&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;业务范围&#34;&gt;&lt;strong&gt;业务范围:&lt;/strong&gt;
-&lt;/h2&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
+&lt;/h2&gt;&lt;h2 id=&#34;联系方式-微信-lacs177&#34;&gt;&lt;strong&gt;联系方式:&lt;/strong&gt; 微信 LACS177
+&lt;/h2&gt;&lt;h2 id=&#34;业务范围&#34;&gt;&lt;strong&gt;业务范围:&lt;/strong&gt;
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;承接小米全系刷机Root，刷机升级降级，救砖&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;联发科秒解，澎湃解bl，线刷卡刷各种系统&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
