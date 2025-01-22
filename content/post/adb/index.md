@@ -1,8 +1,11 @@
-
-
-
-
-[TOC]
+---
+title: ADB-fastboot基础指令
+description:
+date: 2025-01-22
+slug: adb-fastboot
+categories:
+    - 刷机教程
+---
 
 # ADB（Android Debug Bridge）相关
 

@@ -428,9 +428,53 @@ AABJRU5ErkJggg==" />
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk"><a href="https://www.bilibili.com/video/BV1TuiLezEYK/">点我观看视频教程</a></a></li>
-    <li><a href="#更新日志">更新日志</a></li>
-    <li><a href="#计划">计划</a></li>
+    <li><a href="#1adb简介">1.ADB简介</a></li>
+    <li><a href="#2adb-使用方法">2.<strong>ADB 使用方法</strong></a></li>
+    <li><a href="#3adb-常用指令">3.ADB 常用指令</a>
+      <ol>
+        <li><a href="#1-设备连接与状态">1. <strong>设备连接与状态</strong></a></li>
+        <li><a href="#2-设备操作">2. <strong>设备操作</strong></a></li>
+        <li><a href="#3-文件传输">3. <strong>文件传输</strong></a></li>
+        <li><a href="#4-应用管理">4. <strong>应用管理</strong></a></li>
+        <li><a href="#5-系统信息">5. <strong>系统信息</strong></a></li>
+        <li><a href="#6-其他">6. <strong>其他</strong></a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#1fastboot简介">1.FASTBOOT简介</a></li>
+    <li><a href="#2fastboot使用方法">2.FASTBOOT使用方法</a></li>
+    <li><a href="#3fastboot常用指令">3.FASTBOOT常用指令</a>
+      <ol>
+        <li><a href="#1-设备连接与状态-1">1. <strong>设备连接与状态</strong></a></li>
+        <li><a href="#2-设备操作-1">2. <strong>设备操作</strong></a></li>
+        <li><a href="#3-分区操作">3. <strong>分区操作</strong></a></li>
+        <li><a href="#4-解锁与安全不要乱用每个品牌都有不同的方式">4. <strong>解锁与安全（不要乱用，每个品牌都有不同的方式）</strong></a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#注意事项"><strong>注意事项</strong></a></li>
+    <li><a href="#1-windows-系统"><strong>1. Windows 系统</strong></a>
+      <ol>
+        <li><a href="#11-安装-adb-和-fastboot"><strong>1.1 安装 ADB 和 Fastboot</strong></a></li>
+        <li><a href="#12-使用-adb-和-fastboot"><strong>1.2 使用 ADB 和 Fastboot</strong></a></li>
+      </ol>
+    </li>
+    <li><a href="#2-macos-系统"><strong>2. macOS 系统</strong></a>
+      <ol>
+        <li><a href="#21-安装-adb-和-fastboot"><strong>2.1 安装 ADB 和 Fastboot</strong></a></li>
+        <li><a href="#22-使用-adb-和-fastboot"><strong>2.2 使用 ADB 和 Fastboot</strong></a></li>
+      </ol>
+    </li>
+    <li><a href="#3-linux-系统"><strong>3. Linux 系统</strong></a>
+      <ol>
+        <li><a href="#31-安装-adb-和-fastboot"><strong>3.1 安装 ADB 和 Fastboot</strong></a></li>
+        <li><a href="#32-使用-adb-和-fastboot"><strong>3.2 使用 ADB 和 Fastboot</strong></a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -442,16 +486,8 @@ AABJRU5ErkJggg==" />
   
 
             <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/p/hyperos_unlocktool/">
-                
-                    <img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" loading="lazy" alt="Featured image of post 小米澎湃OS绕答题解bl锁教程" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
@@ -466,7 +502,7 @@ AABJRU5ErkJggg==" />
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/hyperos_unlocktool/">小米澎湃OS绕答题解bl锁教程</a>
+            <a href="/p/adb-fastboot/">ADB-fastboot基础指令</a>
         </h2>
     
         
@@ -488,7 +524,7 @@ AABJRU5ErkJggg==" />
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025年01月12日</time>
+                <time class="article-time--published">2025年01月22日</time>
             </div>
         
 
@@ -503,7 +539,7 @@ AABJRU5ErkJggg==" />
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -518,60 +554,241 @@ AABJRU5ErkJggg==" />
     <section class="article-content">
     
     
-    <h2 id="点我观看视频教程httpswwwbilibilicomvideobv1tuilezeyk"><a class="link" href="https://www.bilibili.com/video/BV1TuiLezEYK/"  target="_blank" rel="noopener"
-    >点我观看视频教程</a>
-</h2><h2 id="更新日志">更新日志
+    <h1 id="adbandroid-debug-bridge相关">ADB（Android Debug Bridge）相关
+</h1><h2 id="1adb简介">1.ADB简介
+</h2><p><code>adb</code>（Android Debug Bridge 直译为<strong>安卓调试桥</strong>）是一个功能强大的命令行工具，主要用于与Android设备进行交互。它可以在多种情况下使用，但是否可以用于关机操作取决于设备的系统权限和当前状态。</p>
+<h2 id="2adb-使用方法">2.<strong>ADB 使用方法</strong>
+</h2><ol>
+<li><strong>设备连接状态</strong>
+<ul>
+<li><code>adb</code> 需要设备通过 USB 连接或通过网络连接到计算机或其他移到设备。</li>
+<li>设备必须启用“开发者选项”中的“USB 调试”功能。</li>
+<li>如果设备已连接到网络，也可以通过 <code>adb tcpip</code> 命令进行无线调试。</li>
+</ul>
+</li>
+<li><strong>设备状态</strong>
+<ul>
+<li>设备必须处于正常启动状态，即系统已经加载并运行。</li>
+<li>如果设备处于 Recovery 模式或 Fastboot 模式，<code>adb</code> 的功能会受到限制。</li>
+</ul>
+</li>
+</ol>
+<h2 id="3adb-常用指令">3.ADB 常用指令
+</h2><h3 id="1-设备连接与状态">1. <strong>设备连接与状态</strong>
+</h3><ul>
+<li><code>adb devices</code>：列出已连接的设备。</li>
+<li><code>adb get-state</code>：获取设备状态（如 <code>device</code>、<code>offline</code>）。</li>
+<li><code>adb connect &lt;IP:端口&gt;</code>：远程连接设备。</li>
+<li><code>adb disconnect &lt;IP:端口&gt;</code>：断开设备连接。</li>
+</ul>
+<h3 id="2-设备操作">2. <strong>设备操作</strong>
+</h3><ul>
+<li><code>adb reboot</code>：重启设备至系统。</li>
+<li><code>adb reboot bootloader</code>：重启设备至 Fastboot 模式。</li>
+<li><code>adb reboot recovery</code>：重启设备至 Recovery 模式。</li>
+<li><code>adb reboot edl</code>：重启设备至 EDL 模式（高通）。</li>
+<li><code>adb reboot fastboot</code>: 重启设备至fastbootd模式。</li>
+</ul>
+<h3 id="3-文件传输">3. <strong>文件传输</strong>
+</h3><ul>
+<li><code>adb push &lt;电脑文件路径&gt; &lt;设备目录&gt;</code>：将文件从电脑传输到设备。</li>
+<li><code>adb pull &lt;设备文件路径&gt; &lt;电脑目录&gt;</code>：将文件从设备传输到电脑。</li>
+</ul>
+<h3 id="4-应用管理">4. <strong>应用管理</strong>
+</h3><ul>
+<li><code>adb install &lt;APK路径&gt;</code>：安装 APK。</li>
+<li><code>adb install -r &lt;APK路径&gt;</code>：覆盖安装 APK。</li>
+<li><code>adb uninstall &lt;包名&gt;</code>：卸载应用。</li>
+<li><code>adb uninstall -k &lt;包名&gt;</code>：卸载应用但保留数据。</li>
+<li><code>adb shell pm list packages</code>：列出所有应用包名。</li>
+<li><code>adb shell pm list packages -3</code>：列出第三方应用包名。</li>
+</ul>
+<h3 id="5-系统信息">5. <strong>系统信息</strong>
+</h3><ul>
+<li><code>adb shell getprop</code> ：获取设备的全部信息。</li>
+<li><code>adb shell getprop ro.product.model</code>：获取设备型号。</li>
+<li><code>adb get-serialno</code>：获取设备序列号。</li>
+<li><code>adb shell dumpsys meminfo &lt;包名&gt;</code>：查看应用内存使用情况。</li>
+<li><code>adb shell cat /proc/cpuinfo</code>：获取 CPU 信息。</li>
+</ul>
+<h3 id="6-其他">6. <strong>其他</strong>
+</h3><ul>
+<li><code>adb logcat</code>：查看设备日志。</li>
+<li><code>adb shell</code>：进入设备 Shell。</li>
+<li><code>adb root</code>：以 root 权限运行。</li>
+<li><code>adb remount</code>：重新挂载文件系统。</li>
+</ul>
+<hr>
+<h1 id="fastboot-相关">Fastboot 相关
+</h1><h2 id="1fastboot简介">1.FASTBOOT简介
+</h2><p>Fastboot 是一个功能强大的工具，主要用于 Android 设备的低级别操作，如刷机、解锁 Bootloader、分区管理等。它通过命令行与设备的 Bootloader 交互，广泛应用于系统更新、故障排除和自定义 ROM 安装。</p>
+<h2 id="2fastboot使用方法">2.FASTBOOT使用方法
 </h2><ul>
-<li>2025-01-12 12:00 <strong>V1.5</strong>  更新日志:
-<ol>
-<li>更改整体编码为GB18030,更改bat代码逻辑，更改log和配置文件的读写</li>
-<li></li>
-</ol>
+<li>
+<p><strong>通过命令</strong>：使用 <code>adb reboot bootloader</code>。</p>
 </li>
-<li>2024-11-09 22:00 <strong>V1.5Beta</strong> 更新日志:
-<ol>
-<li>重构使用逻辑，重构整体框架，采用重要功能单独脚本的整体框架结构</li>
-<li>进软件后智能检测机型系统版本等信息，然后做出判断是否可以通过绕答题方式解锁手机</li>
-<li>新增：退出脚本同时结束adb进程、7-zip解压内置重要资源</li>
-</ol>
-</li>
-<li>2024-08-19 12:00 <strong>v1.4</strong> 更新日志：
-<ol>
-<li>新增：设备管理器、usb3.0补丁、退出功能、初始化工具：自动检测驱动和手机信息</li>
-<li>优化：界面显示效果、全盘搜索文件和移动文件逻辑</li>
-<li>更改：精简部分代码、以管理员身份运行工具箱</li>
-</ol>
-</li>
-<li>2024-08-09 19:00 <strong>v1.3</strong> 更新日志：
-<ol>
-<li>新增：eveythingx86.exe、es输出日志</li>
-<li>优化：全盘搜索文件整体逻辑、界面显示效果</li>
-<li>更改：修复使用重启到fastboot会重启到fastbootd的问题 、取消对解锁工具屏蔽更新（屏蔽容易报错）</li>
-</ol>
-</li>
-<li>2024-08-03 12:00 <strong>v1.2</strong> 更新日志：
-<ol>
-<li>新增：工具提示和公告、安装设置前先检测设备是否连接、下载设置完成后工具全盘搜索设置文件然后移动到工具目录进行安装</li>
-<li>优化：界面显示效果、子界面返回逻辑、输入选项错误逻辑、安装设置的整体逻辑</li>
-<li>更改：取消下载直链——下载设置的方式更改为跳转浏览器自行下载</li>
-</ol>
-</li>
-<li>2024-07-13 10:00 <strong>v1.1</strong> 更新日志：
-<ol>
-<li>新增：更新日志功能、关于功能、屏蔽解锁工具更新</li>
-<li>优化：界面显示效果</li>
-<li>更改：集成报错详解于选项、解锁工具界面、汉化bypass脚本</li>
-</ol>
+<li>
+<p><strong>通过按键</strong>：根据设备型号，通常按住音量减键（Vol-）+ 电源键开机。</p>
+<p>​			小米设备为音量-和电源。</p>
 </li>
 </ul>
-<h2 id="计划">计划
-</h2><ul>
-<li>V1.6
-<ol>
-<li>可以更换主题</li>
+<h2 id="3fastboot常用指令">3.FASTBOOT常用指令
+</h2><h3 id="1-设备连接与状态-1">1. <strong>设备连接与状态</strong>
+</h3><ul>
+<li><code>fastboot devices</code>：列出已连接的 Fastboot 设备。</li>
+<li><code>fastboot getvar all</code>：获取设备详细信息。</li>
+</ul>
+<h3 id="2-设备操作-1">2. <strong>设备操作</strong>
+</h3><ul>
+<li><code>fastboot reboot</code>：重启设备。</li>
+<li><code>fastboot reboot-bootloader</code>：重启到 Bootloader 模式。</li>
+</ul>
+<h3 id="3-分区操作">3. <strong>分区操作</strong>
+</h3><ul>
+<li><code>fastboot flash &lt;分区名&gt; &lt;文件路径&gt;</code>：烧录/刷入分区（如 <code>boot</code>、<code>system</code>、<code>recovery</code>）。</li>
+<li><code>fastboot erase &lt;分区名&gt;</code>：擦除分区。</li>
+<li><code>fastboot format &lt;分区名&gt;</code>：格式化分区。</li>
+</ul>
+<h3 id="4-解锁与安全不要乱用每个品牌都有不同的方式">4. <strong>解锁与安全（不要乱用，每个品牌都有不同的方式）</strong>
+</h3><ul>
+<li><code>fastboot flashing unlock</code> 或 <code>fastboot oem unlock</code>：解锁 Bootloader。</li>
+<li><code>fastboot flashing lock</code> 或 <code>fastboot oem lock</code>：锁定 Bootloader。</li>
+</ul>
+<h1 id="如何在-windowsmacos-linux-系统中使用-adb-和-fastboot指令">如何在 Windows、macOS 、Linux 系统中使用 ADB 和 Fastboot指令
+</h1><h2 id="注意事项"><strong>注意事项</strong>
+</h2><ol>
+<li><strong>设备兼容性</strong>：不同设备可能需要特定的 USB 驱动程序或配置。</li>
+<li><strong>备份数据</strong>：在进行刷机或解锁操作前，建议备份设备数据。</li>
+<li><strong>权限问题</strong>：在 Linux 和 macOS 上，可能需要使用 <code>sudo</code> 来运行某些命令。</li>
 </ol>
+<h2 id="1-windows-系统"><strong>1. Windows 系统</strong>
+</h2><h3 id="11-安装-adb-和-fastboot"><strong>1.1 安装 ADB 和 Fastboot</strong>
+</h3><ol>
+<li><strong>下载平台工具</strong>：
+<ul>
+<li>访问 <a class="link" href="https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn"  target="_blank" rel="noopener"
+    >Android SDK Platform-Tools</a> 页面，下载最新版本的 <code>platform-tools.zip</code>。</li>
+<li>或点击https://pan.quark.cn/s/e8b98954568a，快速下载。</li>
+<li>解压下载的文件到一个方便访问的目录，例如 <code>C:\adb</code>。</li>
+</ul>
+</li>
+<li><strong>安装驱动程序</strong>：
+<ul>
+<li>对于某些设备，可能需要安装额外的 USB 驱动程序。可以从设备制造商的官方网站下载。</li>
+</ul>
+</li>
+<li><strong>配置环境变量（可选）</strong>：
+<ul>
+<li>将 ADB 和 Fastboot 的路径（例如 <code>C:\adb</code>）添加到系统的环境变量中，这样可以在任何位置运行命令。</li>
+</ul>
+</li>
+</ol>
+<h3 id="12-使用-adb-和-fastboot"><strong>1.2 使用 ADB 和 Fastboot</strong>
+</h3><ol>
+<li>
+<p><strong>打开命令提示符或 PowerShell</strong>：</p>
+<ul>
+<li>在文件夹中按 <code>Shift + 右键</code>，选择“在此处打开 PowerShell 窗口”。</li>
+<li>如果未添加环境变量，需要在命令前加上路径，例如 <code>.\adb devices</code>。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="2-macos-系统"><strong>2. macOS 系统</strong>
+</h2><h3 id="21-安装-adb-和-fastboot"><strong>2.1 安装 ADB 和 Fastboot</strong>
+</h3><ol>
+<li>
+<p><strong>使用 Homebrew 安装</strong>：</p>
+<ul>
+<li>
+<p>安装 Homebrew（如果尚未安装）。</p>
+</li>
+<li>
+<p>在终端中运行以下命令安装 ADB 和 Fastboot：</p>
+<p>bash复制</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install --cask android-platform-tools
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装完成后，ADB 和 Fastboot 工具将位于 <code>/usr/local/bin</code>。</p>
 </li>
 </ul>
+</li>
+<li>
+<p><strong>验证安装</strong>：</p>
+<ul>
+<li>检查 ADB 版本：<code>adb version</code>。</li>
+<li>检查 Fastboot 版本：<code>fastboot version</code>。</li>
+</ul>
+</li>
+</ol>
+<h3 id="22-使用-adb-和-fastboot"><strong>2.2 使用 ADB 和 Fastboot</strong>
+</h3><ol>
+<li>
+<p><strong>检查设备连接</strong>：</p>
+<ul>
+<li>
+<p>启用设备的 USB 调试模式，然后运行 <code>adb devices</code>。</p>
+</li>
+<li>
+<p>进入 Fastboot 模式：<code>adb reboot bootloader</code>。</p>
+</li>
+<li>
+<p>在 Fastboot 模式下检查设备：<code>fastboot devices</code>。</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="3-linux-系统"><strong>3. Linux 系统</strong>
+</h2><h3 id="31-安装-adb-和-fastboot"><strong>3.1 安装 ADB 和 Fastboot</strong>
+</h3><ol>
+<li>
+<p><strong>下载平台工具</strong>：</p>
+<ul>
+<li>访问 <a class="link" href="https://developer.android.com/studio/releases/platform-tools"  target="_blank" rel="noopener"
+    >Android SDK Platform-Tools</a> 页面，下载最新版本的 <code>platform-tools.zip</code>。</li>
+<li>解压文件到一个目录，例如 <code>~/Android/Sdk/platform-tools</code>。</li>
+</ul>
+</li>
+<li>
+<p><strong>配置 udev 规则（可选）</strong>：</p>
+<ul>
+<li>
+<p>创建或编辑 <code>/etc/udev/rules.d/70-android.rules</code> 文件，添加设备的 USB 规则：</p>
+<p>bash复制</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">&#34;usb&#34;</span>, ATTR<span class="o">{</span>idVendor<span class="o">}==</span><span class="s2">&#34;0e8d&#34;</span>, <span class="nv">MODE</span><span class="o">=</span><span class="s2">&#34;0666&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>重新加载 udev 规则：<code>sudo udevadm control --reload-rules</code>。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="32-使用-adb-和-fastboot"><strong>3.2 使用 ADB 和 Fastboot</strong>
+</h3><ol>
+<li><strong>检查设备连接</strong>：
+<ul>
+<li>启用设备的 USB 调试模式，然后运行 <code>./adb devices</code>。</li>
+<li>进入 Fastboot 模式：<code>./adb reboot bootloader</code>。</li>
+<li>在 Fastboot 模式下检查设备：<code>./fastboot devices</code>。</li>
+</ul>
+</li>
+<li><strong>刷机操作</strong>：</li>
+</ol>
 
 </section>
 
@@ -607,13 +824,19 @@ AABJRU5ErkJggg==" />
         <div class="flex article-list--tile">
             
                 
-<article class="">
-    <a href="/p/adb-fastboot/">
+<article class="has-image">
+    <a href="/p/hyperos_unlocktool/">
         
+        
+            <div class="article-image">
+                
+                    <img src="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg" loading="lazy" data-key="HyperOS_UnlockTool" data-hash="https://cia.hyperos.mi.com/hyperos-homepage/light_hyperos.svg"/>
+                
+            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">ADB-fastboot基础指令</h2>
+            <h2 class="article-title">小米澎湃OS绕答题解bl锁教程</h2>
         </div>
     </a>
 </article>

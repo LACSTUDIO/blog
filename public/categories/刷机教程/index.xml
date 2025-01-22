@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <copyright>领创工作室-保留所有权利</copyright>
         <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--9krq6q.xn--5brr03o.top/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>adb fastboot 常用指令及其相关内容</title>
-        <link>https://xn--9krq6q.xn--5brr03o.top/p/adbfastboot/</link>
+        <title>ADB-fastboot基础指令</title>
+        <link>https://xn--9krq6q.xn--5brr03o.top/p/adb-fastboot/</link>
         <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://xn--9krq6q.xn--5brr03o.top/p/adbfastboot/</guid>
+        <guid>https://xn--9krq6q.xn--5brr03o.top/p/adb-fastboot/</guid>
         <description>&lt;h1 id=&#34;adbandroid-debug-bridge相关&#34;&gt;ADB（Android Debug Bridge）相关
 &lt;/h1&gt;&lt;h2 id=&#34;1adb简介&#34;&gt;1.ADB简介
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;adb&lt;/code&gt;（Android Debug Bridge 直译为&lt;strong&gt;安卓调试桥&lt;/strong&gt;）是一个功能强大的命令行工具，主要用于与Android设备进行交互。它可以在多种情况下使用，但是否可以用于关机操作取决于设备的系统权限和当前状态。&lt;/p&gt;
