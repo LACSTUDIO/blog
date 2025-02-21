@@ -1,3 +1,3 @@
-var posts=["/p/roottool/index/","/p/hyperos_unlocktool/","/p/ycsj/index/","/p/Batch/index/","/p/刷机/xiaomi_usb/","/p/软件测试/jmeter/","/p/软件测试/loadrunner/","/p/刷机/adb_fastboot/"];function toRandomPost(){
+var posts=["/p/Batch/index/","/p/hyperos_unlocktool/","/p/ycsj/index/","/p/软件测试/jmeter/","/p/刷机/xiaomi_usb/","/p/刷机/adb_fastboot/","/p/roottool/index/","/p/软件测试/loadrunner/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
