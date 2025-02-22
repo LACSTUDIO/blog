@@ -96,25 +96,6 @@
     
     
     <entry>
-      <title>Bat脚本教程</title>
-      <link href="//p/Batch/index/"/>
-      <url>//p/Batch/index/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 编程教程 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>小米澎湃OS绕答题解bl锁教程</title>
       <link href="//p/hyperos_unlocktool/"/>
       <url>//p/hyperos_unlocktool/</url>
@@ -125,6 +106,25 @@
       <categories>
           
           <category> 刷机教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bat脚本教程</title>
+      <link href="//p/Batch/index/"/>
+      <url>//p/Batch/index/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程教程 </category>
           
       </categories>
       
