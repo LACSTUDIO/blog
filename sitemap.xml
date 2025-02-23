@@ -119,20 +119,6 @@
 
   
   <url>
-    <loc>https://博客.领创.top/tags/adb/</loc>
-    <lastmod>2025-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://博客.领创.top/tags/fastboot/</loc>
-    <lastmod>2025-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://博客.领创.top/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
     <lastmod>2025-02-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -141,6 +127,20 @@
   
   <url>
     <loc>https://博客.领创.top/tags/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://博客.领创.top/tags/adb/</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://博客.领创.top/tags/fastboot/</loc>
     <lastmod>2025-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://博客.领创.top/categories/%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://博客.领创.top/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/</loc>
     <lastmod>2025-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://博客.领创.top/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/</loc>
+    <loc>https://博客.领创.top/categories/%E7%8E%A9%E6%9C%BA%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
