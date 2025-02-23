@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://博客.领创.top/p/http/HTTP%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/</loc>
+    
+    <lastmod>2025-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://博客.领创.top/p/ycsj/index/</loc>
     
     <lastmod>2025-02-22</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://博客.领创.top/p/Batch/index/</loc>
-    
-    <lastmod>2025-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://博客.领创.top/p/http/HTTP%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/</loc>
     
     <lastmod>2025-02-22</lastmod>
     
