@@ -1,4 +1,4 @@
-var posts=["/p/Batch/index/","/p/hyperos_unlocktool/","/p/roottool/index/","/p/http/HTTP协议概述/","/p/ycsj/index/","/p/软件测试/jmeter/","/p/刷机/xiaomi_usb/","/p/软件测试/loadrunner/","/p/刷机/adb_fastboot/"];function toRandomPost(){
+var posts=["/p/roottool/index/","/p/hyperos_unlocktool/","/p/Batch/index/","/p/刷机/adb_fastboot/","/p/刷机/xiaomi_usb/","/p/http/HTTP协议概述/","/p/ycsj/index/","/p/软件测试/loadrunner/","/p/软件测试/jmeter/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };var friend_link_list=[];
     var refreshNum = 1;

@@ -58,25 +58,6 @@
     
     
     <entry>
-      <title>JMeter</title>
-      <link href="//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/jmeter/"/>
-      <url>//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/jmeter/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-JMeter的概述"><a href="#1-JMeter的概述" class="headerlink" title="1.JMeter的概述"></a>1.JMeter的概述</h1><h3 id="JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。"><a href="#JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。" class="headerlink" title="JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。"></a>JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。</h3><h1 id="2-JMeter的使用"><a href="#2-JMeter的使用" class="headerlink" title="2.JMeter的使用"></a>2.JMeter的使用</h1><ol><li>请求<a href="http://192.168.56.101:8080/suthr/authenticate">http://192.168.56.101:8080/suthr/authenticate</a></li><li>请求默认值</li><li>数据断言</li><li>信息头</li><li>数据驱动</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件测试 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>LoadRunner</title>
       <link href="//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/loadrunner/"/>
       <url>//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/loadrunner/</url>
@@ -96,16 +77,16 @@
     
     
     <entry>
-      <title>Bat脚本教程</title>
-      <link href="//p/Batch/index/"/>
-      <url>//p/Batch/index/</url>
+      <title>JMeter</title>
+      <link href="//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/jmeter/"/>
+      <url>//p/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/jmeter/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="1-JMeter的概述"><a href="#1-JMeter的概述" class="headerlink" title="1.JMeter的概述"></a>1.JMeter的概述</h1><h3 id="JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。"><a href="#JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。" class="headerlink" title="JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。"></a>JMeter是开源性能测试工具，用于测试软件、Web应用等性能，可模拟多用户并发访问，分析系统负载等。</h3><h1 id="2-JMeter的使用"><a href="#2-JMeter的使用" class="headerlink" title="2.JMeter的使用"></a>2.JMeter的使用</h1><ol><li>请求<a href="http://192.168.56.101:8080/suthr/authenticate">http://192.168.56.101:8080/suthr/authenticate</a></li><li>请求默认值</li><li>数据断言</li><li>信息头</li><li>数据驱动</li></ol>]]></content>
       
       
       <categories>
           
-          <category> 编程教程 </category>
+          <category> 软件测试 </category>
           
       </categories>
       
@@ -125,6 +106,25 @@
       <categories>
           
           <category> 刷机教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bat脚本教程</title>
+      <link href="//p/Batch/index/"/>
+      <url>//p/Batch/index/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程教程 </category>
           
       </categories>
       
